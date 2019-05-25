@@ -1,0 +1,24 @@
+{
+  "name": "ghina.dev",
+  "version": "1.0.0",
+  "description": "Ghina's personal site.",
+  "main": "index.html",
+  "dependencies": {
+    "gatsby": "^1.9.xxx"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GhinaY/my-site.git"
+  },
+  "author": "Ghina Yashar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GhinaY/my-site/issues"
+  },
+  "homepage": "https://github.com/GhinaY/my-site#readme"
+}

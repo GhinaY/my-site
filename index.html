@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ghina.Dev</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: table-cell;
+  margin: 0;
+  background: rgb(2,0,36);
+  background: linear-gradient(130deg, rgba(27,4,43,1) 0%, rgba(35,35,59,1) 35%, rgba(55,122,128,1) 100%);
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Header/logo Title */
+.header {
+  font-size: 100px;
+}
+
+/* Increase the font size of the heading */
+.subtitle {
+  font-size: 30px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="header">COMING SOON</div>
+  <div class="subtitle">Dev Ghina is working on it
+    🛠
+  </div>
+</body>
+</html>
