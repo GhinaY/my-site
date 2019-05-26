@@ -4,7 +4,14 @@
   "description": "Ghina's personal site.",
   "main": "index.html",
   "dependencies": {
-    "gatsby": "^1.9.xxx"
+    "gatsby": "^2.7.1",
+    "gatsby-plugin-google-analytics": "^2.0.20",
+    "gatsby-plugin-netlify": "^2.0.17",
+    "gatsby-plugin-sass": "^2.0.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19"
   },
   "scripts": {
     "develop": "gatsby develop",

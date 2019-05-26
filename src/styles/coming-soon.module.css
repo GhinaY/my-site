@@ -1,0 +1,12 @@
+.container {
+    height: 100%;
+  width: 100%;
+  display: table-cell;
+  margin: 0;
+  background: rgb(2,0,36);
+  background: linear-gradient(130deg, rgba(27,4,43,1) 0%, rgba(35,35,59,1) 35%, rgba(55,122,128,1) 100%);
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  vertical-align: middle;
+}
