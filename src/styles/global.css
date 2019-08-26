@@ -1,9 +1,11 @@
-html, body {
+html, body, #___gatsby {
     height: 100%;
-    width: 100%;
-  }
-  
-  html {
-    display: table;
-    margin: auto;
-  }
+}
+
+body {
+    margin: 0px;
+}
+
+div[role="group"][tabindex] {
+    height: 100%;
+}
