@@ -8,12 +8,8 @@ const LogoText = styled.div`
     padding: 20px;
 `;
 
-class Logo extends React.Component {
-    render() {
-      return (
-          <LogoText>Ghina Yashar</LogoText>
-      );
-   }
-  }
-  
+const Logo = () => (
+    <LogoText>Ghina Yashar</LogoText>
+)
+
 export default Logo

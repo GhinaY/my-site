@@ -4,7 +4,7 @@ import Logo from './Logo'
 import styled from 'styled-components'
 
 const isActive = className => ({ isCurrent }) => ({
-    className: className + (isCurrent  ? ` active `  : ``)
+    className: `${className} ${isCurrent ? 'active' : ''}`
 });
 
 const ExactNavLink = ({ className, ...props }) => (
@@ -19,7 +19,7 @@ const NavLink = styled(ExactNavLink)`
         text-shadow:1px 1px 12px #fff, 1px 1px 15px #ccc;
     }
     
-    &:hover {
+    &:not(.active):hover {
         text-decoration-line: underline;
     }
 `;
@@ -32,17 +32,13 @@ const NavBar = styled.nav`
     width: 50%;
 `;
 
-class Header extends React.Component {
-    render() {
-      return (
-        <NavBar>
-            <Logo />
-            <NavLink to={'/'}> Home </NavLink>
-            <NavLink to={'/about'}>About</NavLink>
-            <NavLink to={'/contact'}>Contact</NavLink>
-        </NavBar>
-      );
-   }
-}
+const Header = () => (
+    <NavBar>
+        <Logo />
+        <NavLink to={'/'}> Home </NavLink>
+        <NavLink to={'/about'}>About</NavLink>
+        <NavLink to={'/contact'}>Contact</NavLink>
+    </NavBar>
+)
 
 export default Header
