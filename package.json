@@ -6,7 +6,7 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.7.1",
-    "gatsby-cli": "^2.7.42",
+    "gatsby-cli": "^2.7.47",
     "gatsby-link": "latest",
     "gatsby-plugin-google-analytics": "^2.0.20",
     "gatsby-plugin-layout": "^1.1.5",
