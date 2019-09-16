@@ -7,7 +7,27 @@ html, body, #___gatsby {
 
 div[role="group"][tabindex] {
     height: 100%;
-    background: linear-gradient(160deg, rgba(27,4,43,1) 0%, rgba(35,35,59,1) 35%, rgba(55,122,128,1) 100%);
+
+    background: radial-gradient(#1b042b, #23233b, #377a80);
+    background-size: 400% 200%;
+    animation: gradientBG 25s ease infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@keyframes gradientBG {
+    25% {
+        background-position: 0 100%
+    }
+    50% {
+        background-position: 100% 100%
+    }
+    75% {
+        background-position: 100% 0
+    }
+    100% {
+        filter: hue-rotate(360deg)
+    }
 }
 
 h2 {
