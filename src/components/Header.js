@@ -14,13 +14,21 @@ const ExactNavLink = ({ className, ...props }) => (
 const NavLink = styled(ExactNavLink)`
     color: white;
     text-decoration: none;
-    
+    font-size: 2.1rem;
+    font-weight: 800;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+
     &.active {
-        text-shadow:1px 1px 12px #fff, 1px 1px 15px #ccc;
+        color: black;
+        mix-blend-mode: screen;
+        background-color: white;
     }
     
     &:not(.active):hover {
-        text-decoration-line: underline;
+        color: black;
+        mix-blend-mode: screen;
+        background-color: rgba(255, 255, 255, 0.5);
     }
 `;
 
@@ -37,7 +45,7 @@ const HeaderWrapper = styled.div`
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 3rem;
 `;
 
 const Header = () => (

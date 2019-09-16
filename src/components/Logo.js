@@ -5,9 +5,14 @@ import styled from 'styled-components'
 const LogoText = styled.div`
     display: inline;
     font-family: 'Sacramento', cursive;
-    font-size: 48px;
-    padding: 20px;
+    font-size: 4.8rem;
+    font-weight: normal;
+    padding: 2rem;
     color: white;
+
+    @media only screen and (max-width: 48em) {
+        font-size: 3.2rem;
+    }
 `;
 
 
