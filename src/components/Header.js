@@ -60,6 +60,6 @@ const Header = () => (
             <NavLink to={'/ping'}>Ping me</NavLink>
         </NavLinksWrapper>
     </HeaderWrapper>
-)
+);
 
 export default Header
