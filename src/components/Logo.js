@@ -18,7 +18,7 @@ const LogoText = styled.div`
 
 const Logo = () => (
     <LogoText>Ghina Yashar</LogoText>
-)
+);
 
 
 // Clickable Logo directing to Index
@@ -31,7 +31,6 @@ export const ClickableLogo = () => (
     <StyledLink to={'/'}>
         <Logo/>
     </StyledLink>
-)
-
+);
 
 export default Logo

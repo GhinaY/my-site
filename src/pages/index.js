@@ -19,14 +19,34 @@ const ComingSoon = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 1rem;
+    align-content: center;
+`;
+
+const Headline = styled.h1`
+    font-size: 10rem;
+    margin: 1rem;
+    
+    @media only screen and (max-width: 48em) {
+        font-size: 6rem;
+    }
+`;
+
+const Subheading = styled.p`
+    font-size: 4rem;
+    margin: 1rem;
+    
+    @media only screen and (max-width: 48em) {
+        font-size: 2rem;
+    }
 `;
 
 export default () => (
     <ComingSoonWrapper>
         <Logo />
         <ComingSoon>
-            <h1 style={{ fontSize: `100px`, margin: '0'}}>COMING SOON</h1>
-            <p style={{ fontSize: `40px`, margin: '0' }}>Dev Ghina is working on it 🛠</p>
+            <Headline>COMING SOON</Headline>
+            <Subheading>Dev Ghina is working on it 🛠</Subheading>
         </ComingSoon>
     </ComingSoonWrapper>
 )
