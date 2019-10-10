@@ -1,34 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Red+Hat+Display:400,600,800|Sacramento&display=swap');
 
 html, body, #___gatsby {
-    height: 100%;
-    color: white;
     font-size: 62.5%;
-}
-
-div[role="group"][tabindex] {
-    height: 100%;
-
-    background: radial-gradient(#1b042b, #23233b, #377a80);
-    background-size: 400% 200%;
-    animation: gradientBG 18s ease infinite;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
-}
-
-@keyframes gradientBG {
-    25% {
-        background-position: 0 100%
-    }
-    50% {
-        background-position: 100% 100%
-    }
-    75% {
-        background-position: 100% 0
-    }
-    100% {
-        filter: hue-rotate(360deg)
-    }
 }
 
 h2 {
@@ -46,4 +19,5 @@ body {
     font-size: 3rem;
     text-align: center;
     font-weight: 400;
+    color: white;
 }

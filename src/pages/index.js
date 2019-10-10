@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import Logo from '../components/Logo'
+import Layout from "../components/Layout";
 
 const ComingSoonWrapper = styled.div`
     display: flex;
@@ -42,11 +43,13 @@ const Subheading = styled.p`
 `;
 
 export default () => (
-    <ComingSoonWrapper>
-        <Logo />
-        <ComingSoon>
-            <Headline>COMING SOON</Headline>
-            <Subheading>Dev Ghina is working on it 🛠</Subheading>
-        </ComingSoon>
-    </ComingSoonWrapper>
+    <Layout navigable={false}>
+        <ComingSoonWrapper>
+            <Logo />
+            <ComingSoon>
+                <Headline>COMING SOON</Headline>
+                <Subheading>Dev Ghina is working on it 🛠</Subheading>
+            </ComingSoon>
+        </ComingSoonWrapper>
+    </Layout>
 )
