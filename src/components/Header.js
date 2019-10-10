@@ -22,13 +22,13 @@ const DesktopNavLink = styled(NavLink)`
     font-weight: 800;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    
+
     &.active {
         color: black;
         mix-blend-mode: screen;
         background-color: white;
     }
-    
+
     &:not(.active):hover {
         color: black;
         mix-blend-mode: screen;
@@ -36,16 +36,16 @@ const DesktopNavLink = styled(NavLink)`
     }
 `;
 
-    const MobileNavLink = styled(NavLink)`
-        padding: 1rem 4rem;
-        display: block;
-        color: black;
-        
-        &.active {
-            color: white;
-            background-color: black;
-        }
-    `;
+const MobileNavLink = styled(NavLink)`
+    padding: 1rem 4rem;
+    display: block;
+    color: black;
+
+    &.active {
+        color: white;
+        background-color: black;
+    }
+`;
 
 const NavLinksWrapper = styled.nav`
     display: flex;
@@ -88,7 +88,9 @@ const Header = () => (
             <HeaderWrapper>
                 <NavLinksWrapper>
                     <DesktopNavLink to={'/personal/'}>Personal</DesktopNavLink>
-                    <DesktopNavLink to={'/professional/'}>Professional</DesktopNavLink>
+                    <DesktopNavLink to={'/professional/'}>
+                        Professional
+                    </DesktopNavLink>
                 </NavLinksWrapper>
                 <ClickableLogo />
                 <NavLinksWrapper>
@@ -101,7 +103,9 @@ const Header = () => (
             <ClickableLogo />
             <HamburgerMenu>
                 <MobileNavLink to={'/personal/'}>Personal</MobileNavLink>
-                <MobileNavLink to={'/professional/'}>Professional</MobileNavLink>
+                <MobileNavLink to={'/professional/'}>
+                    Professional
+                </MobileNavLink>
                 <MobileNavLink to={'/projects/'}>Projects</MobileNavLink>
                 <MobileNavLink to={'/ping/'}>Ping me</MobileNavLink>
             </HamburgerMenu>

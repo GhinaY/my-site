@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import styled, { keyframes } from 'styled-components';
-import Header from "./Header";
+import Header from './Header';
 
 const gradient = keyframes`
         25% {

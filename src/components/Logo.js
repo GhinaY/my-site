@@ -1,6 +1,6 @@
 import React from 'react';
-import Link from 'gatsby-link'
-import styled from 'styled-components'
+import Link from 'gatsby-link';
+import styled from 'styled-components';
 
 const LogoText = styled.div`
     display: inline;
@@ -14,11 +14,7 @@ const LogoText = styled.div`
     }
 `;
 
-
-const Logo = () => (
-    <LogoText>Ghina Yashar</LogoText>
-);
-
+const Logo = () => <LogoText>Ghina Yashar</LogoText>;
 
 // Clickable Logo directing to Index
 
@@ -28,8 +24,8 @@ const StyledLink = styled(Link)`
 
 export const ClickableLogo = () => (
     <StyledLink to={'/'}>
-        <Logo/>
+        <Logo />
     </StyledLink>
 );
 
-export default Logo
+export default Logo;

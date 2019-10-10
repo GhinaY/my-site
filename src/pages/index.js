@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components'
-import Logo from '../components/Logo'
-import Layout from "../components/Layout";
+import styled from 'styled-components';
+import Logo from '../components/Logo';
+import Layout from '../components/Layout';
 
 const ComingSoonWrapper = styled.div`
     display: flex;

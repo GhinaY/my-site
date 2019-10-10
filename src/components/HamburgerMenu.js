@@ -1,7 +1,7 @@
-import React, {Fragment, useState} from 'react';
+import React, { Fragment, useState } from 'react';
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const MenuWrapper = styled.div`
     display: block;
@@ -44,7 +44,7 @@ const MenuItems = styled.ul`
     ${({ isOpen }) =>
         isOpen &&
         css`
-            transform: scale(1.0, 1.0) translateX(-100%);
+            transform: scale(1, 1) translateX(-100%);
             opacity: 1;
         `};
 `;
@@ -56,7 +56,7 @@ const MenuButton = styled.button`
     width: 30px;
     height: 30px;
     z-index: 1;
-    
+
     ${({ isOpen }) =>
         isOpen &&
         css`
@@ -72,17 +72,16 @@ const Backdrop = styled.div`
     height: 100%;
     transition: 0.6s;
     opacity: 0;
-    
-   -webkit-backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    
-   ${({ isOpen }) =>
-    isOpen &&
-    css`
+
+    ${({ isOpen }) =>
+        isOpen &&
+        css`
             transform: translateX(-100%);
             opacity: 1;
         `};
-    
 `;
 
 const HamburgerMenu = ({ children }) => {
@@ -90,15 +89,15 @@ const HamburgerMenu = ({ children }) => {
     const toggle = () => setIsOpen(!isOpen);
     return (
         <Fragment>
-            <Backdrop isOpen={isOpen}/>
+            <Backdrop isOpen={isOpen} />
             <MenuWrapper>
                 <MenuButton isOpen={isOpen} onClick={toggle}>
                     <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
                 </MenuButton>
-                <MenuItems isOpen={isOpen}>{
-                    children.map((item,i) =>
+                <MenuItems isOpen={isOpen}>
+                    {children.map((item, i) => (
                         <li key={i}>{item}</li>
-                    )}
+                    ))}
                 </MenuItems>
             </MenuWrapper>
         </Fragment>
