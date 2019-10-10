@@ -27,7 +27,7 @@ const ComingSoon = styled.div`
 const Headline = styled.h1`
     font-size: 10rem;
     margin: 1rem;
-    
+
     @media only screen and (max-width: 48em) {
         font-size: 6rem;
     }
@@ -36,7 +36,7 @@ const Headline = styled.h1`
 const Subheading = styled.p`
     font-size: 4rem;
     margin: 1rem;
-    
+
     @media only screen and (max-width: 48em) {
         font-size: 2rem;
     }
@@ -52,4 +52,4 @@ export default () => (
             </ComingSoon>
         </ComingSoonWrapper>
     </Layout>
-)
+);

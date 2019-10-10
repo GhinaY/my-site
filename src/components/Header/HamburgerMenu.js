@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -12,7 +12,7 @@ const MenuWrapper = styled.div`
     z-index: 1;
 `;
 
-const MenuItems = styled.ul`
+const MenuList = styled.ul`
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -20,26 +20,19 @@ const MenuItems = styled.ul`
     height: 100vh;
     top: 0;
     margin-top: 0;
-    
+
     left: 100%;
     padding-left: 0;
     padding-top: 7rem;
-    
+
     background: white;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
-    
+
     transform-origin: 0% 0%;
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-    
-    li {
-        color: black;
-        transition: color 0.3s ease;
-        width: 100%
-        font-weight: 400;
-    }
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 
     ${({ isOpen }) =>
         isOpen &&
@@ -49,7 +42,14 @@ const MenuItems = styled.ul`
         `};
 `;
 
-const MenuButton = styled.button`
+const MenuListItem = styled.li`
+    color: black;
+    transition: color 0.3s ease;
+    width: 100%
+    font-weight: 400;
+`;
+
+const MenuToggleButton = styled.button`
     all: unset;
     position: relative;
     font-size: 2rem;
@@ -64,7 +64,7 @@ const MenuButton = styled.button`
         `};
 `;
 
-const Backdrop = styled.div`
+const BlurBackdrop = styled.div`
     position: fixed;
     top: 0;
     left: 100%;
@@ -88,19 +88,19 @@ const HamburgerMenu = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
     return (
-        <Fragment>
-            <Backdrop isOpen={isOpen} />
+        <>
+            <BlurBackdrop isOpen={isOpen} />
             <MenuWrapper>
-                <MenuButton isOpen={isOpen} onClick={toggle}>
+                <MenuToggleButton isOpen={isOpen} onClick={toggle}>
                     <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
-                </MenuButton>
-                <MenuItems isOpen={isOpen}>
+                </MenuToggleButton>
+                <MenuList isOpen={isOpen}>
                     {children.map((item, i) => (
-                        <li key={i}>{item}</li>
+                        <MenuListItem key={i}>{item}</MenuListItem>
                     ))}
-                </MenuItems>
+                </MenuList>
             </MenuWrapper>
-        </Fragment>
+        </>
     );
 };
 
