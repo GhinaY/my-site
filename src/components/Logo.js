@@ -7,7 +7,6 @@ const LogoText = styled.div`
     font-family: 'Sacramento', cursive;
     font-size: 4.8rem;
     font-weight: normal;
-    padding: 2rem;
     color: white;
 
     @media only screen and (max-width: 48em) {
