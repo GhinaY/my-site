@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { CollapseReverse } from 'react-burgers';
 
 const MenuWrapper = styled.div`
     position: absolute;
-    top: 2rem;
     right: 2rem;
 
     z-index: 1;
@@ -37,18 +35,30 @@ const MenuList = styled.ul`
         `};
 `;
 
-const MenuToggleButton = styled.button`
-    all: unset;
+const MenuToggleButton = styled(CollapseReverse)`
     position: relative;
-    font-size: 2rem;
-    width: 30px;
-    height: 30px;
     z-index: 1;
 
-    ${({ isOpen }) =>
-        isOpen &&
+    .BurgerBox {
+        width: 2.7rem;
+    }
+
+    .BurgerInner,
+    .BurgerInner:before,
+    .BurgerInner:after {
+        background-color: white;
+        height: 0.3rem;
+        border-radius: 1rem;
+    }
+
+    ${({ active }) =>
+        active &&
         css`
-            color: black;
+            .BurgerInner,
+            .BurgerInner::before,
+            .BurgerInner::after {
+                background-color: black;
+            }
         `};
 `;
 
@@ -79,9 +89,7 @@ const HamburgerMenu = ({ children }) => {
         <>
             <BlurBackdrop isOpen={isOpen} />
             <MenuWrapper>
-                <MenuToggleButton isOpen={isOpen} onClick={toggle}>
-                    <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
-                </MenuToggleButton>
+                <MenuToggleButton active={isOpen} onClick={toggle} />
                 <MenuList isOpen={isOpen}>
                     {children.map((item, i) => (
                         <li key={i}>{item}</li>
