@@ -9,10 +9,12 @@ const ComingSoonWrapper = styled.div`
     height: 100%;
     position: absolute;
     width: 100%;
-    font-family: 'Lexend Deca', sans-serif;
-    color: white;
+    
+    padding-top: 1rem;
     text-align: center;
     justify-content: center;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
 `;
 
 const ComingSoon = styled.div`

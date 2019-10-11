@@ -9,7 +9,6 @@ const DesktopHeader = styled.div`
     justify-content: center;
     width: 100%;
     padding-top: 3rem;
-    overflow: auto;
 
     @media only screen and (max-width: 48em) {
         display: none;
@@ -32,13 +31,11 @@ const DesktopNavLink = styled(props => <NavLink {...props} />)`
 
     &.active {
         color: black;
-        mix-blend-mode: screen;
         background-color: white;
     }
 
     &:not(.active):hover {
         color: black;
-        mix-blend-mode: screen;
         background-color: rgba(255, 255, 255, 0.5);
     }
 `;

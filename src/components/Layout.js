@@ -3,18 +3,19 @@ import styled, { keyframes } from 'styled-components';
 import Header from './Header/Header';
 
 const gradient = keyframes`
-        25% {
-            background-position: 0 100%
+    25% {
+        background-position: 0 100%
     }
-        50% {
-            background-position: 100% 100%
+    50% {
+        background-position: 100% 100%
     }
-        75% {
-            background-position: 100% 0
+    75% {
+        background-position: 100% 0
     }
-        100% {
-            filter: hue-rotate(360deg)
-}`;
+    100% {
+        filter: hue-rotate(360deg)
+    }
+`;
 
 const Background = styled.div`
     position: fixed;

@@ -11,8 +11,7 @@ const MobileHeader = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding 1rem;
-        align-items: centre;
+        padding: 1.4rem 2rem;
     }
 `;
 
