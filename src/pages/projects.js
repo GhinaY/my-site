@@ -1,9 +1,12 @@
 import React from 'react';
+import ReactMarkdown from "react-markdown";
 import Layout from '../components/Layout';
+
+const text = `# What I Do
+stuff here`;
 
 export default () => (
     <Layout>
-        <h2>What I Do</h2>
-        <p>Sometimes, I do stuff.</p>
+        <ReactMarkdown source={text} />
     </Layout>
 );

@@ -1,9 +1,12 @@
 import React from 'react';
+import ReactMarkdown from "react-markdown";
 import Layout from '../components/Layout';
+
+const text = `# My Career
+stuff here`;
 
 export default () => (
     <Layout>
-        <h2>My Career</h2>
-        <p>I work and stuff.</p>
+        <ReactMarkdown source={text} />
     </Layout>
 );
