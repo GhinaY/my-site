@@ -9,7 +9,7 @@ const LogoText = styled.div`
     font-weight: normal;
     color: white;
 
-    @media only screen and (max-width: 48em) {
+    ${props => props.theme.mobileBreakpoint} {
         font-size: 3.2rem;
     }
 `;

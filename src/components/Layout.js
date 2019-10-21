@@ -1,6 +1,10 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, ThemeProvider } from 'styled-components';
 import Header from './Header/Header';
+
+const theme = {
+    mobileBreakpoint: '@media only screen and (max-width: 48em)',
+};
 
 const gradient = keyframes`
     25% {
@@ -32,10 +36,16 @@ const Background = styled.div`
     -webkit-animation-timing-function: ease-in-out;
 `;
 
+const Content = styled.body`
+    padding: 0 7rem;
+`;
+
 export default ({ children, navigable = true }) => (
-    <>
-        <Background />
-        {navigable && <Header />}
-        {children}
-    </>
+    <ThemeProvider theme={theme}>
+        <>
+            {/*<Background />*/}
+            {navigable && <Header />}
+            <Content>{children}</Content>
+        </>
+    </ThemeProvider>
 );

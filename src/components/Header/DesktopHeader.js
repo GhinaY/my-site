@@ -10,7 +10,7 @@ const DesktopHeader = styled.div`
     width: 100%;
     padding-top: 3rem;
 
-    @media only screen and (max-width: 48em) {
+    ${props => props.theme.mobileBreakpoint} {
         display: none;
     }
 `;

@@ -7,7 +7,7 @@ import { NavLink } from './Header';
 const MobileHeader = styled.div`
     display: none;
 
-    @media only screen and (max-width: 48em) {
+    ${props => props.theme.mobileBreakpoint} {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
