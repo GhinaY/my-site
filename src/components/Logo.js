@@ -7,14 +7,14 @@ const LogoText = styled.div`
     font-family: 'Sacramento', cursive;
     font-size: 4.8rem;
     font-weight: normal;
-    color: white;
+    color: ${({ color = 'white' }) => color};
 
     ${props => props.theme.mobileBreakpoint} {
         font-size: 3.2rem;
     }
 `;
 
-const Logo = () => <LogoText>Ghina Yashar</LogoText>;
+const Logo = ({ color }) => <LogoText color={color}>Ghina Yashar</LogoText>;
 
 // Clickable Logo directing to Index
 
@@ -22,9 +22,9 @@ const StyledLink = styled(Link)`
     text-decoration: none;
 `;
 
-export const ClickableLogo = () => (
+export const ClickableLogo = ({ color }) => (
     <StyledLink to={'/'}>
-        <Logo />
+        <Logo color={color} />
     </StyledLink>
 );
 

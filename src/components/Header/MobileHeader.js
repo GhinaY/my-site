@@ -22,14 +22,14 @@ const MobileNavLink = styled(props => <NavLink {...props} />)`
     color: black;
 
     &.active {
-        color: white;
-        background-color: black;
+        color: black;
+        background-color: white;
     }
 `;
 
 export default () => (
     <MobileHeader>
-        <ClickableLogo />
+        <ClickableLogo color={'black'} />
         <HamburgerMenu>
             <MobileNavLink to={'/personal/'}>Personal</MobileNavLink>
             <MobileNavLink to={'/professional/'}>Professional</MobileNavLink>

@@ -8,7 +8,8 @@ const DesktopHeader = styled.div`
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    padding-top: 3rem;
+    padding: 1rem 0;
+    background: black;
 
     ${props => props.theme.mobileBreakpoint} {
         display: none;
@@ -25,18 +26,17 @@ const DesktopNavItems = styled.nav`
 
 const DesktopNavLink = styled(props => <NavLink {...props} />)`
     color: white;
-    font-weight: 800;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding: 0.5rem 1rem;
 
     &.active {
         color: black;
         background-color: white;
+        font-weight: 800;
     }
 
     &:not(.active):hover {
         color: black;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.6);
     }
 `;
 

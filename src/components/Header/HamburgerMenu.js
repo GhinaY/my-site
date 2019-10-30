@@ -20,9 +20,9 @@ const MenuList = styled.ul`
     margin-top: 0;
     padding-top: 7rem;
     padding-left: 0;
-    left: 100%;
+    left: 101%;
 
-    background: white;
+    background: black;
     list-style-type: none;
 
     transform-origin: 0% 0%;
@@ -46,7 +46,11 @@ const MenuToggleButton = styled(CollapseReverse)`
     .BurgerInner,
     .BurgerInner:before,
     .BurgerInner:after {
-        background-color: white;
+        background-color: black;
+        // -webkit-transition: background-color 5s ease-in;
+        // transition: background-color 5s ease-in;
+        // -webkit-transition-delay: background-color 5s;
+        // transition-delay: 5s;
         height: 0.3rem;
         border-radius: 1rem;
     }
@@ -57,7 +61,7 @@ const MenuToggleButton = styled(CollapseReverse)`
             .BurgerInner,
             .BurgerInner::before,
             .BurgerInner::after {
-                background-color: black;
+                background-color: white;
             }
         `};
 `;
