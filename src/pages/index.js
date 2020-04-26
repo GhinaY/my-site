@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import Logo from '../components/Logo';
+import Logo from '../components/Logo/Logo';
 import Layout from '../components/Layout';
 
 const ComingSoonWrapper = styled.div`

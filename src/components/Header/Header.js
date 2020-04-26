@@ -1,21 +1,15 @@
 import React from 'react';
-import styled from 'styled-components';
 import Link from 'gatsby-link';
-import DesktopHeader from './DesktopHeader';
-import MobileHeader from './MobileHeader';
+import DesktopHeader from './DesktopHeader/DesktopHeader';
+import MobileHeader from './MobileHeader/MobileHeader';
 
 const isActive = className => ({ isCurrent }) => ({
     className: `${className} ${isCurrent ? 'active' : ''}`,
 });
 
-const ExactNavLink = ({ className, ...props }) => (
-    <Link getProps={isActive(className)} {...props} />
+export const NavLink = ({ className, ...props }) => (
+    <Link className="genericNavLink" getProps={isActive(className)} {...props} />
 );
-
-export const NavLink = styled(ExactNavLink)`
-    text-decoration: none;
-    font-size: 2.1rem;
-`;
 
 const Header = () => (
     <>

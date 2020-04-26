@@ -1,0 +1,15 @@
+.logoText {
+  display: inline;
+  font-family: 'Sacramento', cursive;
+  font-size: 4.8rem;
+  font-weight: normal;
+  color: white;
+
+  @media only screen and (max-width: 48em) {
+    font-size: 3.2rem;
+  }
+}
+
+.logoLink {
+  text-decoration: none;
+}

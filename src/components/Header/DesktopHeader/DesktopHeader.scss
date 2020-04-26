@@ -1,0 +1,37 @@
+.desktopHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0;
+  background: black;
+
+  @media only screen and (max-width: 48em) {
+    display: none;
+      font-size: 3.2rem;
+  }
+}
+
+.desktopNavItems {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.desktopNavLink { 
+  color: white;
+  padding: 0.5rem 1rem;
+
+  &.active {
+      color: black;
+      background-color: white;
+      font-weight: 800;
+  }
+
+  &:not(.active):hover {
+      color: black;
+      background-color: rgba(255, 255, 255, 0.6);
+  }
+}

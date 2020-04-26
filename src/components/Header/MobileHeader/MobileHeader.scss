@@ -1,0 +1,22 @@
+.mobileHeader {
+  display: none;
+
+  @media only screen and (max-width: 48em) {
+    display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 2.5rem;
+  }
+}
+
+.mobileNavLink {
+  padding: 1rem 4rem;
+  display: block;
+  color: white;
+
+  &.active {
+      color: black;
+      background-color: white;
+  }
+}
