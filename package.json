@@ -27,7 +27,7 @@
     "react-dom": "^16.9.0",
     "react-markdown": "^4.2.2",
     "react-typography": "^0.16.19",
-    "styled-components": "^4.3.2",
+    "styled-components": "^5.1.1",
     "typography": "^0.16.19"
   },
   "scripts": {
