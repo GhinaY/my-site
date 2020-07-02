@@ -78,7 +78,7 @@ export default () => (
     <Layout navigable={false} contentPadding={"0"}>
         <Background />
         <ComingSoonWrapper>
-            <Logo />
+            <Logo color='white'/>
             <ComingSoon>
                 <Headline>COMING SOON</Headline>
                 <Subheading>Dev Ghina is working on it 🛠</Subheading>

@@ -1,22 +1,26 @@
 .mobileHeader {
-  display: none;
+    display: none;
 
-  @media only screen and (max-width: 48em) {
-    display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 2rem 2.5rem;
-  }
+    @media only screen and (max-width: 48em) {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+        padding: 2rem 2.5rem;
+        background: white;
+        width: 100%;
+        height: 5rem;
+    }
 }
 
 .mobileNavLink {
-  padding: 1rem 4rem;
-  display: block;
-  color: white;
+    padding: 1rem 4rem 1rem 8rem;
+    display: block;
 
-  &.active {
-      color: black;
-      background-color: white;
-  }
+    &.active {
+        color: black;
+        background-color: white;
+    }
 }

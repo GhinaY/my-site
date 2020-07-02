@@ -9,10 +9,10 @@ export default () => (
     <div className="mobileHeader">
         <ClickableLogo color={'black'} />
         <HamburgerMenu>
-            <NavLink className="genericNavLink mobileNavLink" to={'/personal/'}>Personal</NavLink>
-            <NavLink className="genericNavLink mobileNavLink" to={'/professional/'}>Professional</NavLink>
-            <NavLink className="genericNavLink mobileNavLink" to={'/projects/'}>Projects</NavLink>
-            <NavLink className="genericNavLink mobileNavLink" to={'/ping/'}>Ping me</NavLink>
+            <NavLink className="genericNavLink mobileNavLink" to={'/home/'}>About</NavLink>
+            <NavLink className="genericNavLink mobileNavLink" to={'/home/'}>Career</NavLink>
+            <NavLink className="genericNavLink mobileNavLink" to={'/home/'}>Projects</NavLink>
+            <NavLink className="genericNavLink mobileNavLink" to={'/home/'}>Contact</NavLink>
         </HamburgerMenu>
     </div>
 );
