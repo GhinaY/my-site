@@ -1,8 +1,23 @@
 import React from 'react';
 import ReactMarkdown from "react-markdown";
 import Layout from '../components/Layout/Layout';
+import Section from '../components/Section/Section';
 import profilePic from '../../assets/profilePicture.jpg';
 import '../styles/home.scss';
+
+const text = `# About me
+hi
+my name
+_is_
+## ghiona
+hello`;
+
+const aboutContent = (
+    <>
+        <h1 id='career' className='rest'>About</h1>
+        <ReactMarkdown className='rest' source={text} />
+    </>
+);
 
 export default () => (
     <Layout>
@@ -19,6 +34,6 @@ export default () => (
             </div>
             <div className='gradientLine' />
         </div>
-        {/* <ReactMarkdown source={text} /> */}
+        <Section id='About' content={aboutContent} />
     </Layout>
 );

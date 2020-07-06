@@ -1,21 +1,47 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link, animateScroll as scroll } from "react-scroll";
+import classNames from "classnames";
 import DesktopHeader from './DesktopHeader/DesktopHeader';
 import MobileHeader from './MobileHeader/MobileHeader';
+import "./Header.scss";
+import "./MobileHeader/MobileHeader.scss";
 
-const isActive = className => ({ isCurrent }) => ({
-    className: `${className} ${isCurrent ? 'active' : ''}`,
-});
+const classnameSelector = (subClassName) => {
+    return classNames({
+        'genericNavLink': true,
+        [subClassName]: true,
+    });
+}
 
-export const NavLink = ({ className, ...props }) => (
-    <Link className="genericNavLink" getProps={isActive(className)} {...props} />
+export const MenuItem = ({ subClassName, itemName }) => (
+    <Link
+        className={classnameSelector(subClassName)}
+        activeClass="active"
+        to={itemName}
+        spy={true}
+        smooth={true}
+        offset={-150}
+        duration={500}
+    >
+        {itemName}
+    </Link>
 );
 
-const Header = () => (
-    <>
-        <DesktopHeader />
-        <MobileHeader />
-    </>
-);
+
+const Header = () => {
+    const menuItems = [
+        'About',
+        'Career',
+        'Projects',
+        'Contact'
+    ]
+
+    return (
+        <>
+            <DesktopHeader menuItems={menuItems} />
+            <MobileHeader menuItems={menuItems} />
+        </>
+    );
+}
 
 export default Header;

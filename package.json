@@ -4,9 +4,6 @@
   "description": "Ghina's personal site.",
   "main": "index.html",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-solid-svg-icons": "latest",
-    "@fortawesome/react-fontawesome": "latest",
     "babel-plugin-styled-components": "^1.10.6",
     "classnames": "^2.2.6",
     "gatsby": "^2.15.14",
@@ -26,6 +23,7 @@
     "react-burgers": "^1.3.0",
     "react-dom": "^16.9.0",
     "react-markdown": "^4.2.2",
+    "react-scroll": "^1.7.16",
     "react-typography": "^0.16.19",
     "styled-components": "^5.1.1",
     "typography": "^0.16.19"

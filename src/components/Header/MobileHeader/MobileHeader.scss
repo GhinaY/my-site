@@ -15,12 +15,15 @@
     }
 }
 
-.mobileNavLink {
-    padding: 1rem 4rem 1rem 8rem;
+.mobileMenuItem {
+    margin: 1rem 3rem 1rem 8rem;
+    padding-right: 1rem;
     display: block;
+    border-right: 3px solid transparent;
 
     &.active {
-        color: black;
-        background-color: white;
+        border-right: 3px solid transparent;
+        border-image: linear-gradient(to bottom, #37006c, #b04056);
+        border-image-slice: 1;
     }
 }
