@@ -12,7 +12,7 @@ export default ({ menuItems }) => {
 
     return (
     <div className="mobileHeader">
-        <ClickableLogo color={'black'} />
+        <ClickableLogo />
         <HamburgerMenu>
             {menuList}
         </HamburgerMenu>
