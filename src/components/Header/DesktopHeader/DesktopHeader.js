@@ -6,13 +6,13 @@ import './DesktopHeader.scss';
 export default ({ menuItems }) => {
 
     const menuList = menuItems.map(item =>
-        <MenuItem subClassName="desktopMenuItem" itemName={item} />
+        <MenuItem subClassName='desktopMenuItem' itemName={item} />
     )
 
     return (
-    <div className="desktopHeader">
+    <div className='desktopHeader'>
         <ClickableLogo />
-        <nav className="desktopNavItems">
+        <nav className='desktopNavItems'>
             {menuList}
         </nav>
     </div>

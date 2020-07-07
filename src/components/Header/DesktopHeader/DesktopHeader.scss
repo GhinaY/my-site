@@ -6,7 +6,7 @@
   justify-content: space-evenly;
   z-index: 1;
   top: 0;
-  height: 11rem;
+  height: 12rem;
   width: 100%; 
   margin: auto;
   padding: 2rem 0rem;
@@ -35,9 +35,5 @@
     border-bottom: 3px solid transparent;
     border-image: linear-gradient(to right, #37006c, #b04056);
     border-image-slice: 1;
-  }
-
-  &:not(.active):hover {
-    // font-weight: 800;
   }
 }

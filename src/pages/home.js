@@ -5,6 +5,23 @@ import Section from '../components/Section/Section';
 import profilePic from '../../assets/profilePicture.jpg';
 import '../styles/home.scss';
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    var screenWidth = Math.max(window.screen.width, window.innerWidth);
+
+    // if not mobile
+    if (screenWidth > 480) {
+        var content = document.getElementById('welcomeBlock').getBoundingClientRect();
+        if (content.top < 160) {
+            document.getElementById('stickyLine').classList.add('stickyLine');
+
+        } else {
+            document.getElementById('stickyLine').classList.remove('stickyLine');
+        }
+    }
+}
+
 const text = `# About me
 hi
 my name
@@ -20,9 +37,9 @@ const aboutContent = (
 );
 
 const welcomeBlock = (
-    <div className='welcomeBlock'>
+    <div id='welcomeBlock' className='welcomeBlock'>
         <img className='mobileProfilePicture' src={profilePic} alt='profile' />
-        <div className='gradientLine' />
+        <div id='stickyLine' className='gradientLine' />
         <div className='welcomeContents'>
             <div className='welcomeText'>
                 <p className='welcomeSmall'>Hi! I'm</p>
