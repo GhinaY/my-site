@@ -2,7 +2,6 @@
   position: initial;
   height: 4px;
   width: 600px;
-  background: linear-gradient(90deg, rgba(55,0,108,1) 0%, rgba(221,133,88,1) 100%);
   content: '';
   transition: 0.2s;
 
@@ -13,12 +12,13 @@
 
 .stickyLine {
   position: fixed;
-  top: 16rem;
+  top: 15rem;
   width: 100%;
+  z-index: 10;
 }
 
 .welcomeBlock {
-  margin-top: 15vh;
+  margin-top: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import "./Logo.scss"
 
 const Logo = ({ color }) => (
-    <div className="logoText" style={{ '-webkit-text-fill-color': color }}>
+    <div className="logoText gradientColors" style={{ '-webkit-text-fill-color': color }}>
         Ghina Yashar
     </div>
 )

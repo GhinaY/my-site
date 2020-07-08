@@ -1,11 +1,10 @@
 .logoText {
   display: inline;
-  font-family: 'Sacramento', cursive;
+  font-family: 'Sacramento', monospace;
   font-size: 4.8rem;
   font-weight: normal;
-  background: linear-gradient(90deg, rgba(55,0,108,1) 0%, rgba(187,116,79,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; // to make the animated colors the text, not the bg
+  -webkit-text-fill-color: transparent; // same ^
 
   @media only screen and (max-width: 48em) {
     font-size: 3.2rem;

@@ -13,7 +13,7 @@ function scrollFunction() {
     // if not mobile
     if (screenWidth > 480) {
         var content = document.getElementById('welcomeBlock').getBoundingClientRect();
-        if (content.top < 160) {
+        if (content.top < 150) {
             document.getElementById('stickyLine').classList.add('stickyLine');
 
         } else {
@@ -39,7 +39,7 @@ const aboutContent = (
 const welcomeBlock = (
     <div id='welcomeBlock' className='welcomeBlock'>
         <img className='mobileProfilePicture' src={profilePic} alt='profile' />
-        <div id='stickyLine' className='gradientLine' />
+        <div id='stickyLine' className='gradientLine gradientColors' />
         <div className='welcomeContents'>
             <div className='welcomeText'>
                 <p className='welcomeSmall'>Hi! I'm</p>
@@ -49,7 +49,7 @@ const welcomeBlock = (
             </div>
             <img className='desktopProfilePicture' src={profilePic} alt='profile' />
         </div>
-        <div className='gradientLine' />
+        <div className='gradientLine gradientColors' />
     </div>
 );
 
