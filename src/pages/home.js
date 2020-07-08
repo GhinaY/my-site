@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import Layout from '../components/Layout/Layout';
 import Section from '../components/Section/Section';
 import profilePic from '../../assets/profilePicture.jpg';
+import aboutPic from '../../assets/tulip_field.jpg';
 import '../styles/home.scss';
 
 window.onscroll = function() {scrollFunction()};
@@ -22,17 +23,15 @@ function scrollFunction() {
     }
 }
 
-const text = `# About me
-hi
-my name
-_is_
-## ghiona
-hello`;
-
 const aboutContent = (
     <>
-        <h1 id='career' className='rest'>About</h1>
-        <ReactMarkdown className='rest' source={text} />
+        <div className='aboutSection'>
+            <img className='aboutPicture' src={aboutPic} alt='Me in a tulip field' />
+            <div className='aboutText'>
+                <h3 className='sectionHeader'>Who even am I?</h3>
+                <p className='sectionBody'>I'm a Melbourne-based software engineer and developer with a wild imagination, a deep sense of curiosity and many passions. Just to name a few...</p>
+            </div>
+        </div>
     </>
 );
 
@@ -57,5 +56,6 @@ export default () => (
     <Layout>
         {welcomeBlock}
         <Section id='About' content={aboutContent} />
+        <span className='quoteText gradientColors'>"Stay hungry; Stay foolish"</span>
     </Layout>
 );
