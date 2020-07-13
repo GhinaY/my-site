@@ -1,0 +1,52 @@
+.cardCollection {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 30rem));
+  grid-gap: 2rem;
+  justify-content: center;
+}
+
+.gridSubtitle {
+  margin: auto;
+}
+
+.cardFrame {
+  display: flex;
+  box-shadow: 0 0 4px lightgrey;
+  border-radius: 0.5rem;
+  flex-basis: 100%;
+  max-width: 30rem;
+}
+
+.skillIcon {
+  width: 15% !important;
+  margin: auto 1rem;
+  margin-right: 0rem;
+}
+
+.awsIcon {
+  height: 100%;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 1rem;
+}
+
+.skillName {
+  font-weight: 600;
+  margin: 0rem;
+}
+
+.skillDescription {
+  color: gray;
+  margin: 0rem;
+  font-size: 1.6rem;
+}
+
+.test {
+  width: 10rem;
+  height: 10rem;
+}

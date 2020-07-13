@@ -6,7 +6,7 @@ import './DesktopHeader.scss';
 export default ({ menuItems }) => {
 
     const menuList = menuItems.map(item =>
-        <MenuItem subClassName='desktopMenuItem' itemName={item} />
+        <MenuItem subClassName='desktopMenuItem' key={item} itemName={item} />
     )
 
     return (

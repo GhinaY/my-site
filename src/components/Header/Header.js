@@ -31,8 +31,8 @@ export const MenuItem = ({ subClassName, itemName }) => (
 const Header = () => {
     const menuItems = [
         'About',
-        'Career',
-        'Projects',
+        'Skills',
+        'Resume',
         'Contact'
     ]
 

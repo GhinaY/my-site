@@ -4,9 +4,9 @@ import Footer from '../Footer/Footer';
 import './Layout.scss';
 
 export default ({ children, navigable = true }) => (
-    <>
+    <body>
         {navigable && <Header />}
-        <body className='layout' >{children}</body>
+        <div className='layout' >{children}</div>
         {navigable && <Footer />}
-    </>
+    </body>
 );

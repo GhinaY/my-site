@@ -7,7 +7,7 @@ import './MobileHeader.scss';
 export default ({ menuItems }) => {
 
     const menuList = menuItems.map(item =>
-        <MenuItem subClassName="mobileMenuItem" itemName={item} />
+        <MenuItem key={item} subClassName="mobileMenuItem" itemName={item} />
     )
 
     return (

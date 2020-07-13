@@ -6,6 +6,7 @@ module.exports = {
         `gatsby-plugin-styled-components`,
         `gatsby-plugin-offline`,
         `gatsby-plugin-sass`,
+        `gatsby-plugin-react-svg`,
         {
             resolve: `gatsby-remark-prettier`,
             options: {

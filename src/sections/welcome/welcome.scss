@@ -1,0 +1,104 @@
+.gradientLine {
+  position: initial;
+  height: 4px;
+  width: 600px;
+  content: '';
+  transition: 0.2s;
+
+  @media only screen and (max-width: 48em) {
+    width: 100%;
+  }
+}
+
+.stickyLine {
+  position: fixed;
+  top: 15rem;
+  width: 100%;
+  z-index: 10;
+}
+
+.welcomeBlock {
+  margin-top: 20vh;
+  margin-bottom: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @media only screen and (max-width: 48em) {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+}
+
+.welcomeContents {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  justify-content: space-evenly;
+  margin: 5rem auto;
+
+  @media only screen and (max-width: 48em) {
+    width: 100%;
+    margin: 3rem auto;
+  }
+}
+
+.welcomeText {
+  text-align: center;
+  text-justify: distribute;
+}
+
+.welcomeSmall {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 2rem;
+  margin: 0rem;
+
+  @media only screen and (max-width: 48em) {
+    font-size: 1.4rem;
+  }
+}
+
+.welcomeMedium {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 3.4rem;
+  margin: 0rem;
+  margin-top: 1rem;
+
+  @media only screen and (max-width: 48em) {
+    font-size: 2.4rem;
+  }
+}
+
+.welcomeLarge {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 7.2rem;
+  margin: 0rem;
+
+  @media only screen and (max-width: 48em) {
+    font-size:5rem;
+  }
+}
+
+.desktopProfilePicture {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 100%;
+
+  @media only screen and (max-width: 48em) {
+    display: none;
+  }
+}
+
+.mobileProfilePicture {
+  display: none;
+
+  @media only screen and (max-width: 48em) {
+    display: block;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 100%;
+    margin-bottom: 3rem;
+  }
+}
