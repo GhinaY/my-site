@@ -126,7 +126,7 @@ const SkillCard = ({ skill }) => {
 
 export default (
     <div className='skillsSection'>
-        <h2 className='sectionHeader'>My Skills</h2>
+        <h2 className='sectionTitle'>My Skills</h2>
         <div className='cardCollection'>
             <h3 className='sectionSubtitle gridSubtitle'>Technical</h3>
             {TechSkills.map(skill =>

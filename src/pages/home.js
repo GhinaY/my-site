@@ -4,6 +4,7 @@ import Section from '../components/Section/Section';
 import welcomeBlock from '../sections/welcome/welcome';
 import aboutSection from '../sections/about/about';
 import skillsSection from '../sections/skills/skills';
+import resumeSection from '../sections/resume/resume';
 import '../styles/home.scss';
 
 window.onscroll = function() {scrollFunction()};
@@ -35,6 +36,7 @@ export default () => (
         {welcomeBlock}
         <Section id='About' content={aboutSection} />
         <Section id='Skills' content={skillsSection} />
+        <Section id='Resume' content={resumeSection} />
         {quote}
     </Layout>
 );

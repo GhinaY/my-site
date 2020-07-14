@@ -21,7 +21,7 @@ export const MenuItem = ({ subClassName, itemName }) => (
         spy={true}
         smooth={true}
         offset={-200}
-        duration={500}
+        duration={600}
     >
         {itemName}
     </Link>
