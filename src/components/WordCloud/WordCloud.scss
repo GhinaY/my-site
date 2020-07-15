@@ -1,5 +1,6 @@
 .wordCloudContainer {
   width: 50%;
+  max-width: 130rem;
   margin: 3rem auto 0rem;
 
   @media only screen and (max-width: 48em) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Illustration from '../../../assets/business-woman.svg';
+import Illustration from '../../../assets/folder-woman.svg';
 import './resume.scss';
 import '../../styles/home.scss';
 

@@ -53,10 +53,6 @@ const words = [
     value: 8,
   },
   {
-    text: 'Cattos & Doggos',
-    value: 6,
-  },
-  {
     text: 'Music',
     value: 8,
   },
@@ -69,7 +65,7 @@ const words = [
     value: 1,
   },
   {
-    text: 'Trees',
+    text: 'Forests',
     value: 7,
   },
   {

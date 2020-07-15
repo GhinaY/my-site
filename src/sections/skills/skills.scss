@@ -1,6 +1,8 @@
 .cardCollection {
   display: grid;
   width: 100%;
+  max-width: 130rem;
+  margin: auto;
   grid-template-columns: repeat(auto-fit, minmax(min-content, 30rem));
   grid-gap: 2rem;
   justify-content: center;
@@ -44,9 +46,4 @@
   color: gray;
   margin: 0rem;
   font-size: 1.6rem;
-}
-
-.test {
-  width: 10rem;
-  height: 10rem;
 }

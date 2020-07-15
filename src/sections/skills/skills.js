@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers, faHandHoldingHeart, faClipboardList, faLaughWink, faExpandArrowsAlt, faChalkboardTeacher, faHandshake } from '@fortawesome/free-solid-svg-icons'
+import { faUsers, faHandHoldingHeart, faClipboardList, faLaughWink, faExpandArrowsAlt, faChalkboardTeacher, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import ReactIcon from 'react-devicon/react/original/ReactOriginal.svg';
 import SwiftIcon from 'react-devicon/swift/original/SwiftOriginal.svg';
 import JavascriptIcon from 'react-devicon/javascript/plain/JavascriptPlain.svg';
