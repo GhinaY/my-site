@@ -2,7 +2,7 @@
   position: fixed;
   right: 2rem;
 
-  z-index: 1;
+  z-index: 100;
 }
 
 .menuList {
@@ -57,6 +57,7 @@
   height: 100%;
   transition: 0.6s;
   opacity: 0;
+  z-index: 50;
 
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -65,4 +66,10 @@
 .blurBackdrop-active {
   transform: translateX(-100%);
   opacity: 1;
+}
+
+.hamburgerMenuItem {
+  margin: 1rem 3rem 1rem 8rem;
+  padding-right: 1rem;
+  display: block;
 }
