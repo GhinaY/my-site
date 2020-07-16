@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import classNames from "classnames";
 import DesktopHeader from './DesktopHeader/DesktopHeader';
 import MobileHeader from './MobileHeader/MobileHeader';
@@ -13,14 +13,14 @@ const classnameSelector = (subClassName) => {
     });
 }
 
-export const MenuItem = ({ subClassName, itemName }) => (
+export const MenuItem = ({ subClassName, itemName, offset = 0 }) => (
     <Link
         className={classnameSelector(subClassName)}
         activeClass="active"
         to={itemName}
         spy={true}
         smooth={true}
-        offset={-200}
+        offset={offset}
         duration={600}
     >
         {itemName}
@@ -29,17 +29,10 @@ export const MenuItem = ({ subClassName, itemName }) => (
 
 
 const Header = () => {
-    const menuItems = [
-        'About',
-        'Skills',
-        'Resume',
-        'Contact'
-    ]
-
     return (
         <>
-            <DesktopHeader menuItems={menuItems} />
-            <MobileHeader menuItems={menuItems} />
+            <DesktopHeader />
+            <MobileHeader />
         </>
     );
 }

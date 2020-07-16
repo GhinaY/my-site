@@ -3,11 +3,18 @@ import { ClickableLogo } from '../../Logo/Logo';
 import { MenuItem } from '../Header';
 import './DesktopHeader.scss';
 
-export default ({ menuItems }) => {
+const menuItems = {
+    About: -180,
+    Skills: -50,
+    Resume: -50,
+    Contact: -50
+};
 
-    const menuList = menuItems.map(item =>
-        <MenuItem subClassName='desktopMenuItem' key={item} itemName={item} />
-    )
+export default () => {
+
+    const menuList = Object.keys(menuItems).map(function(key) {
+        return <MenuItem subClassName='desktopMenuItem' key={key} itemName={key} offset={menuItems[key]}/>
+    });
 
     return (
     <div className='desktopHeader'>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from "react-helmet";
 import Layout from '../components/Layout/Layout';
 import Section from '../components/Section/Section';
 import welcomeBlock from '../sections/welcome/welcome';
@@ -33,12 +34,17 @@ const quote = (
 )
 
 export default () => (
-    <Layout>
-        {welcomeBlock}
-        <Section id='About' content={aboutSection} />
-        <Section id='Skills' content={skillsSection} />
-        <Section id='Resume' content={resumeSection} />
-        <Section id='Contact' content={contactSection} />
-        {quote}
-    </Layout>
+    <>
+        <Helmet>
+        <title>{`Ghina Yashar | Resume`}</title>
+        </Helmet>
+        <Layout>
+            {welcomeBlock}
+            <Section id='About' content={aboutSection} />
+            <Section id='Skills' content={skillsSection} />
+            <Section id='Resume' content={resumeSection} />
+            <Section id='Contact' content={contactSection} />
+            {quote}
+        </Layout>
+    </>
 );

@@ -3,19 +3,28 @@ module.exports = {
         title: `Ghina Yashar`,
     },
     plugins: [
+        {
+            resolve: `gatsby-remark-prettier`,
+            options: {
+                usePrettierrc: true,
+            },
+        },
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+              name: `Ghina Yashar's Resume`,
+              short_name: `GY`,
+              start_url: `/`,
+              background_color: `#fff`,
+              theme_color: `#000`,
+              display: `standalone`,
+              icon: `./assets/favicon-512x512.png`
+            },
+        },
         `gatsby-plugin-styled-components`,
         `gatsby-plugin-offline`,
         `gatsby-plugin-sass`,
         `gatsby-plugin-react-svg`,
-        {
-            resolve: `gatsby-remark-prettier`,
-            options: {
-                // Look for local .prettierrc file.
-                // The same as `prettier.resolveConfig(process.cwd())`
-                usePrettierrc: true,
-                // Overwrite prettier options, check out https://prettier.io/docs/en/options.html
-                prettierOptions: {},
-            },
-        },
+        `gatsby-plugin-react-helmet`,
     ],
 }

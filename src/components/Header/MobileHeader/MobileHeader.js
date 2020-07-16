@@ -4,11 +4,18 @@ import { ClickableLogo } from '../../Logo/Logo';
 import { MenuItem } from '../Header';
 import './MobileHeader.scss';
 
-export default ({ menuItems }) => {
+const menuItems = {
+    About: -100,
+    Skills: 50,
+    Resume: 50,
+    Contact: 50
+};
 
-    const menuList = menuItems.map(item =>
-        <MenuItem key={item} subClassName="mobileMenuItem" itemName={item} />
-    )
+export default () => {
+
+    const menuList = Object.keys(menuItems).map(function(key) {
+        return <MenuItem subClassName='mobileMenuItem' key={key} itemName={key} offset={menuItems[key]} />
+    });
 
     return (
     <div className="mobileHeader">
