@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers, faHandHoldingHeart, faClipboardList, faLaughWink, faExpandArrowsAlt, faChalkboardTeacher, faHandshake } from '@fortawesome/free-solid-svg-icons';
+import { faUsers, faHandHoldingHeart, faClipboardList, faLaughWink, faExpandArrowsAlt, faChalkboardTeacher, faHandshake, faCircle as filledCircle} from '@fortawesome/free-solid-svg-icons';
+import { faCircle as emptyCircle} from '@fortawesome/free-regular-svg-icons';
 import ReactIcon from 'react-devicon/react/original/ReactOriginal.svg';
 import SwiftIcon from 'react-devicon/swift/original/SwiftOriginal.svg';
 import JavascriptIcon from 'react-devicon/javascript/plain/JavascriptPlain.svg';
@@ -19,57 +20,57 @@ const TechSkills = [
     {
         name: 'Swift',
         icon: <SwiftIcon className='skillIcon' />,
-        description: 'some here about React'
+        description: skillRating(4)
     },
     {
         name: 'Javascript',
         icon: <JavascriptIcon className='skillIcon' />,
-        description: 'some words here '
+        description: skillRating(4)
     },
     {
         name: 'React',
         icon: <ReactIcon className='skillIcon' />,
-        description: 'some words here about React'
+        description: skillRating(4)
     },
     {
         name: 'CSS',
         icon: <CSSIcon className='skillIcon' />,
-        description: 'some words'
+        description: skillRating(3)
     },
     {
         name: 'Ruby on Rails',
         icon: <RailsIcon className='skillIcon' />,
-        description: 'React'
-    },
-    {
-        name: 'Docker',
-        icon: <DockerIcon className='skillIcon' />,
-        description: 'React'
-    },
-    {
-        name: 'Maya 3D Modeling',
-        icon: <MayaLIcon className='skillIcon' />,
-        description: 'some words'
-    },
-    {
-        name: 'GraphQL',
-        icon: <GraphQLIcon className='skillIcon' />,
-        description: 'some '
+        description: skillRating(3)
     },
     {
         name: 'AWS S3',
         icon: <S3Icon className='skillIcon awsIcon' />,
-        description: 'some words'
+        description: skillRating(3)
     },
     {
         name: 'AWS Lambda',
         icon: <LambdaIcon className='skillIcon awsIcon' />,
-        description: 'some '
+        description: skillRating(3)
     },
     {
         name: 'AWS CloudFormation',
         icon: <CloudFormationIcon className='skillIcon awsIcon' />,
-        description: 'some '
+        description: skillRating(3)
+    },
+    {
+        name: 'Docker',
+        icon: <DockerIcon className='skillIcon' />,
+        description: skillRating(2)
+    },
+    {
+        name: 'Maya 3D Modeling',
+        icon: <MayaLIcon className='skillIcon' />,
+        description: skillRating(2)
+    },
+    {
+        name: 'GraphQL',
+        icon: <GraphQLIcon className='skillIcon' />,
+        description: skillRating(2)
     },
 ];
 
@@ -77,39 +78,68 @@ const SoftSkills = [
     {
         name: 'Leadership',
         icon: <FontAwesomeIcon icon={faUsers} size='lg' className='skillIcon'/>,
-        description: 'some here about React'
+        description: <p className='skillDescription'>{
+            'Support & trust the team'
+        }</p>
     },
     {
         name: 'Public speaking',
         icon: <FontAwesomeIcon icon={faChalkboardTeacher} size='lg' className='skillIcon'/>,
-        description: 'some words here '
+        description: <p className='skillDescription'>{
+            'Can talk (or sing) on a stage'
+        }</p>
     },
     {
         name: 'Teamwork',
         icon: <FontAwesomeIcon icon={faHandshake} size='lg' className='skillIcon'/>,
-        description: 'some words here about React'
+        description: <p className='skillDescription'>{
+            'Communication & empathy'
+        }</p>
     },
     {
         name: 'Organization',
         icon: <FontAwesomeIcon icon={faClipboardList} size='lg' className='skillIcon'/>,
-        description: 'some words'
+        description: <p className='skillDescription'>{
+            'Planning & managing resources'
+        }</p>
     },
     {
         name: 'Adaptability',
         icon: <FontAwesomeIcon icon={faExpandArrowsAlt} size='lg' className='skillIcon'/>,
-        description: 'React'
+        description: <p className='skillDescription'>{
+            'Thrive in evolving environments'
+        }</p>
     },
     {
         name: 'Mentoring',
         icon: <FontAwesomeIcon icon={faHandHoldingHeart} size='lg' className='skillIcon'/>,
-        description: 'React'
+        description: <p className='skillDescription'>{
+            'We all learn when we teach'
+        }</p>
     },
     {
         name: 'Fun!',
         icon: <FontAwesomeIcon icon={faLaughWink} size='lg' className='skillIcon'/>,
-        description: 'some words'
+        description: <p className='skillDescription'>{
+            'I always keep it real'
+        }</p>
     },
 ];
+
+function skillRating(number) {
+    let circles = [];
+    for (let i = 0; i < number; i++) {
+        circles.push(<FontAwesomeIcon icon={filledCircle} size='sm' className='skillRatingCircle' />)
+    }
+    while(circles.length < 4) {
+        circles.push(<FontAwesomeIcon icon={emptyCircle} size='sm' className='skillRatingCircle' />)
+    }
+    return (
+        <div className='skillRatingSet'>
+            {circles}
+        </div>
+    )
+};
 
 const SkillCard = ({ skill }) => {
     const { name, icon, description } = skill;
@@ -118,7 +148,7 @@ const SkillCard = ({ skill }) => {
             {icon}
             <div className='cardText'>
                 <p className='skillName'>{name}</p>
-                <p className='skillDescription'>{description}</p>
+                {description}
             </div>
         </div>
     );
