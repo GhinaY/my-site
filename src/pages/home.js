@@ -9,7 +9,9 @@ import resumeSection from '../sections/resume/resume';
 import contactSection from '../sections/contact/contact';
 import '../styles/home.scss';
 
-window.onscroll = function() {scrollFunction()};
+if (typeof window !== 'undefined') {
+    window.onscroll = function() {scrollFunction()};
+}
 
 function scrollFunction() {
     var screenWidth = Math.max(window.screen.width, window.innerWidth);
