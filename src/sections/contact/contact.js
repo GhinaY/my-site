@@ -13,7 +13,7 @@ export default (
         <h2 className='sectionSubtitle contactTitle'>Contact Me</h2>
         <p>If you'd like to reach out to me, professionally or personally, you can use the following channels.</p>
         <div className='contactButtonsSet'>
-          <a href='mailto:ghina.yashar@gmail.com' className='contactButton' target="_blank" rel="noopener noreferrer">
+          <a href='mailto:contact@ghina.dev' className='contactButton' target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faEnvelope} size='2x' className='contactButtonIcon' />
           </a>
           <a href='http://linkedin.com/in/ghina-yashar' className='contactButton' target="_blank" rel="noopener noreferrer">
