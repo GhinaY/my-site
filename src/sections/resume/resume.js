@@ -1,5 +1,6 @@
 import React from 'react';
 import Illustration from '../../../assets/folder-woman.svg';
+import Resume from '../../../assets/Ghina_Yashar_Resume.pdf'
 import './resume.scss';
 import '../../styles/home.scss';
 
@@ -14,7 +15,7 @@ export default (
           right here in Melbourne or wherever else in the world.<br /><br />
           If you'd like to find out more about my experience and capabilities,
           please have a read through my full resume here.</p>
-        <button className='actionButton'>Download</button>
+        <a className='actionButton' href={Resume}>Download</a>
       </div>
       <Illustration className='desktopResumeImage' />
     </div>
