@@ -6,7 +6,7 @@ import './Layout.scss';
 export default ({ children, navigable = true }) => (
     <body>
         {navigable && <Header />}
-        <div className='layout' >{children}</div>
+        <div className='content' >{children}</div>
         {navigable && <Footer />}
     </body>
 );
