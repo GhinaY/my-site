@@ -12,18 +12,18 @@
 
 @keyframes colorAnimation {
   25% {
-      transform: rotate(15deg);
+    transform: rotate(15deg);
   }
   40% {
-      transform: rotate(-10deg);
+    transform: rotate(-10deg);
   }
   60% {
-          transform: rotate(5deg);
+    transform: rotate(5deg);
   }
   80% {
-      transform: rotate(-5deg);
+    transform: rotate(-5deg);
   }
   100% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }

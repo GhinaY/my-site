@@ -1,61 +1,61 @@
 .resumeSection {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    
-    @media only screen and (max-width: 48em) {
-        margin-top: 0rem;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  @media only screen and (max-width: 48em) {
+    margin-top: 0rem;
+  }
 }
 
 .titleContainer {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .resumeText {
-    max-width: 52rem;
+  max-width: 52rem;
 }
 
 .desktopResumeImage {
-    width: 25%;
-    max-width: 38rem;
-    margin-right: -8rem;
+  width: 25%;
+  max-width: 38rem;
+  margin-right: -8rem;
 
-    @media only screen and (max-width: 48em) {
-        display: none;
-    }
+  @media only screen and (max-width: 48em) {
+    display: none;
+  }
 }
 
 .mobileResumeImage {
-    display: none;
+  display: none;
 
-    @media only screen and (max-width: 48em) {
-        display: block;
-        height: 12rem;
-    }
+  @media only screen and (max-width: 48em) {
+    display: block;
+    height: 12rem;
+  }
 }
 
 .mobileBreak {
-    display: none;
-    @media only screen and (max-width: 48em) {
-        display: block;
-    }
+  display: none;
+  @media only screen and (max-width: 48em) {
+    display: block;
+  }
 }
 
 .actionButton {
-    display: inline-block;
-    background: black;
-    color: white;
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 600;
-    font-size: 1.6rem;
-    text-decoration: none;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
-    border: none;
-    padding: 1rem 2rem;
-    cursor: pointer;
+  display: inline-block;
+  background: black;
+  color: white;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
 }

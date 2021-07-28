@@ -4,9 +4,10 @@ import { ClickableLogo } from '../../Logo/Logo';
 import './MobileHeader.scss';
 
 export default () => {
-    return (
+  return (
     <div className="mobileHeader">
-        <ClickableLogo />
-        <HamburgerMenu />
+      <ClickableLogo />
+      <HamburgerMenu />
     </div>
-)};
+  );
+};

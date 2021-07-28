@@ -37,15 +37,15 @@
   z-index: 1;
 
   .BurgerBox {
-      width: 2.7rem;
+    width: 2.7rem;
   }
 
   .BurgerInner,
   .BurgerInner:before,
   .BurgerInner:after {
-      background-color: black;
-      height: 0.3rem;
-      border-radius: 1rem;
+    background-color: black;
+    height: 0.3rem;
+    border-radius: 1rem;
   }
 }
 

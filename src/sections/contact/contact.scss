@@ -1,58 +1,58 @@
 .contactSection {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem auto 15rem;
-    padding: 3rem;
-    background-color: #f3f3f3;
-    
-    @media only screen and (max-width: 48em) {
-        margin-top: 0rem;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 15rem;
+  padding: 3rem;
+  background-color: #f3f3f3;
+
+  @media only screen and (max-width: 48em) {
+    margin-top: 0rem;
+  }
 }
 
 .contactText {
-    margin-left: 5rem;
-    max-width: 35.5rem;
+  margin-left: 5rem;
+  max-width: 35.5rem;
 
-    @media only screen and (max-width: 48em) {
-        margin-left: 0;
-    }
+  @media only screen and (max-width: 48em) {
+    margin-left: 0;
+  }
 }
 
 .contactButtonsSet {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .desktopContactImage {
-    width: 25%;
-    max-width: 30rem;
-    margin-left: -2rem;
+  width: 25%;
+  max-width: 30rem;
+  margin-left: -2rem;
 
-    @media only screen and (max-width: 48em) {
-        display: none;
-    }
+  @media only screen and (max-width: 48em) {
+    display: none;
+  }
 }
 
 .contactButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background-color: black;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: black;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }
 
 .contactButtonIcon {
-    color: white;
-    width: 2.5rem;
-    height: 2.5rem;
+  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .fa-facebook-f {
-    margin-left: -2px;
+  margin-left: -2px;
 }

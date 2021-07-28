@@ -1,18 +1,21 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import "./Logo.scss"
+import './Logo.scss';
 
 const Logo = ({ color }) => (
-    <div className="logoText gradientColors" style={{ '-webkit-text-fill-color': color }}>
-        Ghina Yashar
-    </div>
-)
+  <div
+    className="logoText gradientColors"
+    style={{ '-webkit-text-fill-color': color }}
+  >
+    Ghina Yashar
+  </div>
+);
 
 // Clickable Logo directing to Index
 export const ClickableLogo = ({ color }) => (
-    <Link className="logoLink" to={'/'}>
-        <Logo color={color} />
-    </Link>
+  <Link className="logoLink" to={'/'}>
+    <Logo color={color} />
+  </Link>
 );
 
 export default Logo;

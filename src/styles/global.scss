@@ -3,56 +3,62 @@
 html,
 body,
 #___gatsby {
-    font-size: 62.5%;
-    -webkit-font-smoothing: antialiased;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 {
-    font-family: 'Lexend Deca', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 h1 {
-    font-size: 6.4rem;
+  font-size: 6.4rem;
 
-    @media only screen and (max-width: 48em) {
-        font-size: 4rem;
-    }
+  @media only screen and (max-width: 48em) {
+    font-size: 4rem;
+  }
 }
 
 h3 {
-    font-size: 2.4rem;
-    font-weight: 400;
+  font-size: 2.4rem;
+  font-weight: 400;
 }
 
 body {
-    margin: 0;
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 400;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
 
-    @media only screen and (max-width: 48em) {
-        font-size: 2rem;
-    }
+  @media only screen and (max-width: 48em) {
+    font-size: 2rem;
+  }
 }
 
 .gradientColors {
-    background: linear-gradient(to right, rgba(55,0,108,1) 0%, rgba(187,116,79,1));
-    animation: gradient 18s ease infinite;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
+  background: linear-gradient(
+    to right,
+    rgba(55, 0, 108, 1) 0%,
+    rgba(187, 116, 79, 1)
+  );
+  animation: gradient 18s ease infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
 }
 
 @keyframes gradient {
-25% {
-background-position: 0 100%
-}
-50% {
-  background-position: 100% 100%
-}
-75% {
-  background-position: 100% 0
-}
-100% {
-  filter: hue-rotate(360deg)
-}
+  25% {
+    background-position: 0 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 100% 0;
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }

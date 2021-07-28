@@ -1,17 +1,17 @@
 .mobileHeader {
-    display: none;
+  display: none;
 
-    @media only screen and (max-width: 48em) {
-        position: fixed;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        top: 0;
-        padding: 2rem 2.5rem;
-        background: white;
-        width: 100%;
-        height: 5rem;
-        z-index: 10;
-    }
+  @media only screen and (max-width: 48em) {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    padding: 2rem 2.5rem;
+    background: white;
+    width: 100%;
+    height: 5rem;
+    z-index: 10;
+  }
 }
