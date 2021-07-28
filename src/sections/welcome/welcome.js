@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePic from '../../../assets/profilePictureimage-rendering: -webkit-optimize-contrast.jpg';
+import profilePic from '../../../assets/profilePicture.jpg';
 import './welcome.scss';
 import '../../styles/home.scss';
 
