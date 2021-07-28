@@ -77,7 +77,7 @@
   margin: 0rem;
 
   @media only screen and (max-width: 48em) {
-    font-size:5rem;
+    font-size: 5rem;
   }
 }
 
@@ -85,6 +85,11 @@
   width: 16rem;
   height: 16rem;
   border-radius: 100%;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
 
   @media only screen and (max-width: 48em) {
     display: none;
@@ -100,5 +105,11 @@
     height: 16rem;
     border-radius: 100%;
     margin-bottom: 3rem;
+
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
   }
 }
