@@ -10,7 +10,7 @@ const menuItems = {
   Contact: -50,
 };
 
-export default () => {
+const DesktopHeader = () => {
   const menuList = Object.keys(menuItems).map(function (key) {
     return (
       <MenuItem
@@ -29,3 +29,5 @@ export default () => {
     </div>
   );
 };
+
+export default DesktopHeader;

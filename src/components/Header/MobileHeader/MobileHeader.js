@@ -3,7 +3,7 @@ import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
 import { ClickableLogo } from '../../Logo/Logo';
 import './MobileHeader.scss';
 
-export default () => {
+const MobileHeader = () => {
   return (
     <div className="mobileHeader">
       <ClickableLogo />
@@ -11,3 +11,5 @@ export default () => {
     </div>
   );
 };
+
+export default MobileHeader;

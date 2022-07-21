@@ -40,7 +40,7 @@ const quote = (
   </div>
 );
 
-export default () => (
+const Home = () => (
   <>
     <Helmet>
       <title>{`Ghina Yashar | Resume`}</title>
@@ -55,3 +55,5 @@ export default () => (
     </Layout>
   </>
 );
+
+export default Home;
