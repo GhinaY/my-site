@@ -31,8 +31,12 @@
   }
 }
 
-.awsIcon {
+.fullHeightIcon {
   height: 100%;
+}
+
+.mlIcon > path {
+  fill: black;
 }
 
 .cardText {

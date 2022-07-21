@@ -18,10 +18,10 @@ import TypescriptIcon from 'react-devicon/typescript/original/TypescriptOriginal
 import RailsIcon from 'react-devicon/rails/plain/RailsPlain.svg';
 import CSSIcon from 'react-devicon/css3/plain/Css3Plain.svg';
 import DockerIcon from 'react-devicon/docker/plain/DockerPlain.svg';
-import S3Icon from 'react-aws-icons/dist/aws/logo/S3';
-import LambdaIcon from 'react-aws-icons/dist/aws/logo/Lambda';
-import CloudFormationIcon from 'react-aws-icons/dist/aws/logo/CloudFormation';
+import Python from 'react-devicon/Python/plain/PythonPlain.svg';
 import GraphQLIcon from '../../../assets/icons/GraphQL-logo.svg';
+import MLIcon from '../../../assets/icons/ml-icon.svg';
+import HaskellIcon from '../../../assets/icons/haskell-icon.svg';
 import './skills.scss';
 import '../../styles/home.scss';
 
@@ -47,6 +47,16 @@ const TechSkills = [
     description: skillRating(4),
   },
   {
+    name: 'Python',
+    icon: <Python className="skillIcon" />,
+    description: skillRating(3),
+  },
+  {
+    name: 'Machine Learning',
+    icon: <MLIcon className="skillIcon mlIcon" />,
+    description: skillRating(3),
+  },
+  {
     name: 'Swift',
     icon: <SwiftIcon className="skillIcon" />,
     description: skillRating(3),
@@ -54,21 +64,11 @@ const TechSkills = [
   {
     name: 'Ruby on Rails',
     icon: <RailsIcon className="skillIcon" />,
-    description: skillRating(3),
-  },
-  {
-    name: 'AWS Lambda',
-    icon: <LambdaIcon className="skillIcon awsIcon" />,
-    description: skillRating(3),
-  },
-  {
-    name: 'AWS S3',
-    icon: <S3Icon className="skillIcon awsIcon" />,
     description: skillRating(2),
   },
   {
-    name: 'AWS CloudFormation',
-    icon: <CloudFormationIcon className="skillIcon awsIcon" />,
+    name: 'Haskell',
+    icon: <HaskellIcon className="skillIcon fullHeightIcon" />,
     description: skillRating(2),
   },
   {
