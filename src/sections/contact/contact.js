@@ -1,5 +1,6 @@
 import React from 'react';
-import Illustration from '../../../assets/phone-conversation.svg';
+import IllustrationBW from '../../../assets/contact-illustration-bw.svg';
+import IllustrationColor from '../../../assets/contact-illustration-color.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -8,7 +9,8 @@ import '../../styles/home.scss';
 
 export default (
   <div className="contactSection">
-    <Illustration className="desktopContactImage" />
+    <IllustrationBW className="desktopImage desktopContactImage lightModeIllustration" />
+    <IllustrationColor className="desktopImage desktopContactImage darkModeIllustration" />
     <div className="contactText">
       <h2 className="sectionSubtitle contactTitle">Contact Me</h2>
       <p>

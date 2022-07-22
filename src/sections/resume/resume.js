@@ -1,5 +1,6 @@
 import React from 'react';
-import Illustration from '../../../assets/folder-woman.svg';
+import IllustrationBW from '../../../assets/resume-illustration-bw.svg';
+import IllustrationColor from '../../../assets/resume-illustration-color.svg';
 import Resume from '../../../assets/Ghina_Yashar_Resume.pdf';
 import './resume.scss';
 import '../../styles/home.scss';
@@ -12,7 +13,8 @@ export default (
           My <br className="mobileBreak" />
           Resume
         </h2>
-        <Illustration className="mobileResumeImage" />
+        <IllustrationBW className="mobileImage mobileResumeImage lightModeIllustration" />
+        <IllustrationColor className="mobileImage mobileResumeImage darkModeIllustration" />
       </div>
       <p>
         I'm always on the lookout for new and exciting opportunities, right here
@@ -26,6 +28,7 @@ export default (
         Download
       </a>
     </div>
-    <Illustration className="desktopResumeImage" />
+    <IllustrationBW className="desktopImage desktopResumeImage lightModeIllustration" />
+    <IllustrationColor className="desktopImage desktopResumeImage darkModeIllustration" />
   </div>
 );

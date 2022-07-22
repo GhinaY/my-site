@@ -21,10 +21,17 @@ module.exports = {
         icon: `./assets/favicon-512x512.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography.js`,
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-svg`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-dark-mode`,
   ],
 };

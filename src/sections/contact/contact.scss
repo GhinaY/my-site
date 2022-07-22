@@ -4,7 +4,7 @@
   justify-content: center;
   margin: 1rem auto 15rem;
   padding: 3rem;
-  background-color: #f3f3f3;
+  background-color: var(--bgOverlay);
 
   @media only screen and (max-width: 48em) {
     margin-top: 0rem;
@@ -29,10 +29,6 @@
   width: 25%;
   max-width: 30rem;
   margin-left: -2rem;
-
-  @media only screen and (max-width: 48em) {
-    display: none;
-  }
 }
 
 .contactButton {
@@ -41,14 +37,14 @@
   align-items: center;
   width: 5rem;
   height: 5rem;
-  background-color: black;
+  background-color: var(--uiPrimary);
   border-radius: 50%;
   border: none;
   cursor: pointer;
 }
 
 .contactButtonIcon {
-  color: white;
+  color: var(--bg);
   width: 2.5rem;
   height: 2.5rem;
 }

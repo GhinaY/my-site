@@ -23,19 +23,10 @@
   width: 25%;
   max-width: 38rem;
   margin-right: -8rem;
-
-  @media only screen and (max-width: 48em) {
-    display: none;
-  }
 }
 
 .mobileResumeImage {
-  display: none;
-
-  @media only screen and (max-width: 48em) {
-    display: block;
-    height: 12rem;
-  }
+  height: 12rem;
 }
 
 .mobileBreak {
@@ -47,8 +38,8 @@
 
 .actionButton {
   display: inline-block;
-  background: black;
-  color: white;
+  background: var(--uiPrimary);
+  color: var(--bg);
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 600;
   font-size: 1.6rem;

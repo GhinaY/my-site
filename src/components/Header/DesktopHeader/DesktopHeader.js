@@ -1,5 +1,6 @@
 import React from 'react';
 import { ClickableLogo } from '../../Logo/Logo';
+import ThemeToggleButton from '../../ThemeToggleButton/ThemeToggleButton';
 import { MenuItem } from '../Header';
 import './DesktopHeader.scss';
 
@@ -26,6 +27,7 @@ const DesktopHeader = () => {
     <div className="desktopHeader">
       <ClickableLogo />
       <nav className="desktopNavItems">{menuList}</nav>
+      <ThemeToggleButton />
     </div>
   );
 };

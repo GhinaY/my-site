@@ -3,14 +3,7 @@
 html,
 body,
 #___gatsby {
-  font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
-}
-
-h1,
-h2,
-h3 {
-  font-family: 'Lexend Deca', sans-serif;
 }
 
 h1 {
@@ -21,6 +14,10 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 2.7rem;
+}
+
 h3 {
   font-size: 2.4rem;
   font-weight: 400;
@@ -28,12 +25,74 @@ h3 {
 
 body {
   margin: 0;
-  font-family: 'Red Hat Display', sans-serif;
   font-size: 1.8rem;
-  font-weight: 400;
+
+  --bg: white;
+  --bgOverlay: rgb(243, 243, 243);
+  --shadow: #00000040;
+  --textPrimary: black;
+  --textSecondary: #808080;
+  --textTertiary: #a9a9a9;
+  --uiPrimary: black;
+
+  background-color: var(--bg);
+  color: var(--textPrimary);
 
   @media only screen and (max-width: 48em) {
     font-size: 2rem;
+  }
+
+  .lightModeIllustration.desktopImage {
+    display: block;
+
+    @media only screen and (max-width: 48em) {
+      display: none;
+    }
+  }
+
+  .lightModeIllustration.mobileImage {
+    display: none;
+
+    @media only screen and (max-width: 48em) {
+      display: block;
+    }
+  }
+
+  .darkModeIllustration {
+    display: none;
+    filter: grayscale(1) drop-shadow(0px 0px 1px grey);
+  }
+}
+
+body.dark {
+  -webkit-font-smoothing: antialiased;
+
+  --bg: #202124;
+  --bgOverlay: #303134;
+  --shadow: #5f6368;
+  --textPrimary: rgba(255, 255, 255, 0.88);
+  --textSecondary: #bdc1c6;
+  --textTertiary: #969ba1;
+  --uiPrimary: rgba(255, 255, 255, 0.88);
+
+  .darkModeIllustration.desktopImage {
+    display: block;
+
+    @media only screen and (max-width: 48em) {
+      display: none;
+    }
+  }
+
+  .darkModeIllustration.mobileImage {
+    display: none;
+
+    @media only screen and (max-width: 48em) {
+      display: block;
+    }
+  }
+
+  .lightModeIllustration {
+    display: none;
   }
 }
 

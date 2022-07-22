@@ -14,7 +14,7 @@
 
 .cardFrame {
   display: flex;
-  box-shadow: 0 0 4px lightgrey;
+  box-shadow: 0 0 4px var(--shadow);
   border-radius: 0.5rem;
   flex-basis: 100%;
   max-width: 30rem;
@@ -36,7 +36,7 @@
 }
 
 .mlIcon > path {
-  fill: black;
+  fill: var(--textPrimary);
 }
 
 .cardText {
@@ -62,7 +62,7 @@
 }
 
 .skillDescription {
-  color: gray;
+  color: var(--textSecondary);
   margin: 0rem;
   font-size: 1.6rem;
 
@@ -87,4 +87,11 @@
   width: 1rem;
   height: 1rem;
   color: #d0cbcb;
+}
+
+.lineDivider {
+  width: 65%;
+  height: 2px;
+  box-shadow: 0 1px 2px var(--shadow);
+  margin: 4rem auto;
 }

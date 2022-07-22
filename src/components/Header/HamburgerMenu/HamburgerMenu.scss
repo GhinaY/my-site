@@ -18,7 +18,7 @@
   padding-left: 0;
   left: 101%;
 
-  background: white;
+  background: var(--bg);
   list-style-type: none;
   border-width: 0;
   border-left: 4px solid;
@@ -43,7 +43,7 @@
   .BurgerInner,
   .BurgerInner:before,
   .BurgerInner:after {
-    background-color: black;
+    background-color: var(--textPrimary);
     height: 0.3rem;
     border-radius: 1rem;
   }

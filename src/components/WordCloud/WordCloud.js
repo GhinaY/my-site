@@ -3,7 +3,7 @@ import ReactWordcloud from 'react-wordcloud';
 import './WordCloud.scss';
 
 const options = {
-  colors: ['#000'],
+  colors: ['var(--textPrimary'],
   enableTooltip: false,
   deterministic: true,
   fontFamily: 'Red Hat Display',

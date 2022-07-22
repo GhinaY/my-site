@@ -12,7 +12,7 @@
   padding: 2rem 0rem;
   box-sizing: border-box;
   overflow: hidden;
-  background: white;
+  background: var(--bg);
 
   @media only screen and (max-width: 48em) {
     display: none;
@@ -30,9 +30,5 @@
 
 .desktopMenuItem {
   margin: 0rem 2rem;
-  border-bottom: 3px solid white;
-
-  &.active {
-    color: darkgray;
-  }
+  border-bottom: 3px solid var(--bg);
 }
