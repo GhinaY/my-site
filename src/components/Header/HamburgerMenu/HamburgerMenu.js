@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import { CollapseReverse } from 'react-burgers';
 import { MenuItem } from '../Header';
+import ThemeToggleButton from '../../ThemeToggleButton/ThemeToggleButton';
 import './HamburgerMenu.scss';
 
 const menuItems = {
@@ -54,6 +55,7 @@ const HamburgerMenu = () => {
           {menuList.map((item, i) => (
             <li key={i}>{item}</li>
           ))}
+          <ThemeToggleButton buttonClassName="hamburgerMenuItem" />
         </ul>
       </div>
     </>

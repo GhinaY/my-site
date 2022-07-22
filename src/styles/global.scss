@@ -34,6 +34,8 @@ body {
   --textSecondary: #808080;
   --textTertiary: #a9a9a9;
   --uiPrimary: black;
+  --gradient1: rgb(55, 0, 108);
+  --gradient2: rgb(187, 116, 79);
 
   background-color: var(--bg);
   color: var(--textPrimary);
@@ -42,15 +44,17 @@ body {
     font-size: 2rem;
   }
 
-  .lightModeIllustration.desktopImage {
+  .lightModeOnly {
     display: block;
-
+  }
+  
+  .lightModeOnly.desktopImage {
     @media only screen and (max-width: 48em) {
       display: none;
     }
   }
 
-  .lightModeIllustration.mobileImage {
+  .lightModeOnly.mobileImage {
     display: none;
 
     @media only screen and (max-width: 48em) {
@@ -58,8 +62,11 @@ body {
     }
   }
 
-  .darkModeIllustration {
+  .darkModeOnly {
     display: none;
+  }
+
+  .darkModeIllustration {
     filter: grayscale(1) drop-shadow(0px 0px 1px grey);
   }
 }
@@ -74,16 +81,20 @@ body.dark {
   --textSecondary: #bdc1c6;
   --textTertiary: #969ba1;
   --uiPrimary: rgba(255, 255, 255, 0.88);
+  --gradient1: rgb(137, 112, 158);
+  --gradient2: rgb(191, 148, 125);
 
-  .darkModeIllustration.desktopImage {
+  .darkModeOnly {
     display: block;
+  }
 
+  .darkModeOnly.desktopImage {
     @media only screen and (max-width: 48em) {
       display: none;
     }
   }
 
-  .darkModeIllustration.mobileImage {
+  .darkModeOnly.mobileImage {
     display: none;
 
     @media only screen and (max-width: 48em) {
@@ -91,16 +102,21 @@ body.dark {
     }
   }
 
-  .lightModeIllustration {
+  .lightModeOnly {
     display: none;
   }
+}
+
+.gradientText {
+  -webkit-background-clip: text; // to make the animated colors ofthe text, not the bg
+  -webkit-text-fill-color: transparent; // same ^
 }
 
 .gradientColors {
   background: linear-gradient(
     to right,
-    rgba(55, 0, 108, 1) 0%,
-    rgba(187, 116, 79, 1)
+    var(--gradient1) 0%,
+    var(--gradient2)
   );
   animation: gradient 18s ease infinite;
   animation-timing-function: ease-in-out;

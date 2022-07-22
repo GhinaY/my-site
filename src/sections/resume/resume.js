@@ -13,8 +13,8 @@ export default (
           My <br className="mobileBreak" />
           Resume
         </h2>
-        <IllustrationBW className="mobileImage mobileResumeImage lightModeIllustration" />
-        <IllustrationColor className="mobileImage mobileResumeImage darkModeIllustration" />
+        <IllustrationBW className="mobileImage mobileResumeImage lightModeOnly" />
+        <IllustrationColor className="mobileImage mobileResumeImage darkModeOnly darkModeIllustration" />
       </div>
       <p>
         I'm always on the lookout for new and exciting opportunities, right here
@@ -28,7 +28,7 @@ export default (
         Download
       </a>
     </div>
-    <IllustrationBW className="desktopImage desktopResumeImage lightModeIllustration" />
-    <IllustrationColor className="desktopImage desktopResumeImage darkModeIllustration" />
+    <IllustrationBW className="desktopImage desktopResumeImage lightModeOnly" />
+    <IllustrationColor className="desktopImage desktopResumeImage darkModeOnly darkModeIllustration" />
   </div>
 );

@@ -18,57 +18,97 @@ import '../../styles/home.scss';
 const TechSkills = [
   {
     name: 'Javascript',
-    icon: <img className="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />,
+    icon: <img 
+      className="skillIcon" 
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" 
+      alt="Javascript logo"
+    />,
     description: skillRating(4),
   },
   {
     name: 'Typescript',
-    icon: <img className="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />,
+    icon: <img 
+      className="skillIcon" 
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" 
+      alt="Typescript logo"
+    />,
     description: skillRating(4),
   },
   {
     name: 'React',
-    icon: <img className="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />,
+    icon: <img 
+      className="skillIcon" 
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+      alt="React logo"
+    />,
     description: skillRating(4),
   },
   {
     name: 'CSS',
-    icon: <img className="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />,
+    icon: <img 
+      className="skillIcon" 
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" 
+      alt="CSS logo"
+    />,
     description: skillRating(4),
   },
   {
     name: 'Python',
-    icon: <img className="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" />,
+    icon: <img 
+      className="skillIcon" 
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" 
+      alt="Python logo"
+    />,
     description: skillRating(3),
   },
   {
     name: 'Machine Learning',
-    icon: <MLIcon className="skillIcon mlIcon" />,
+    icon: <MLIcon className="skillIcon mlIcon"/>,
     description: skillRating(3),
   },
   {
     name: 'Swift',
-    icon: <img className="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" />,
+    icon: <img 
+      className="skillIcon" 
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" 
+      alt="Swift logo"
+    />,
     description: skillRating(3),
   },
   {
     name: 'Ruby on Rails',
-    icon: <img className="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg" />,
+    icon: <img 
+      className="skillIcon" 
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg" 
+      alt="Ruby on Rails logo"
+    />,
     description: skillRating(2),
   },
   {
     name: 'Haskell',
-    icon: <img className="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/haskell/haskell-original.svg" />,
+    icon: <img 
+      className="skillIcon" 
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/haskell/haskell-original.svg" 
+      alt="Haskell logo"
+    />,
     description: skillRating(2),
   },
   {
     name: 'GraphQL',
-    icon: <img className="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" />,
+    icon: <img 
+      className="skillIcon" 
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" 
+      alt="GraphQL logo"
+    />,
     description: skillRating(2),
   },
   {
     name: 'Docker',
-    icon: <img className="skillIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg" />,
+    icon: <img 
+      className="skillIcon" 
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg" 
+      alt="Docker logo"
+    />,
     description: skillRating(2),
   },
 ];

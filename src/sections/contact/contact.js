@@ -9,8 +9,8 @@ import '../../styles/home.scss';
 
 export default (
   <div className="contactSection">
-    <IllustrationBW className="desktopImage desktopContactImage lightModeIllustration" />
-    <IllustrationColor className="desktopImage desktopContactImage darkModeIllustration" />
+    <IllustrationBW className="desktopImage desktopContactImage lightModeOnly" />
+    <IllustrationColor className="desktopImage desktopContactImage darkModeOnly darkModeIllustration" />
     <div className="contactText">
       <h2 className="sectionSubtitle contactTitle">Contact Me</h2>
       <p>

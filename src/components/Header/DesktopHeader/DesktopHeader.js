@@ -26,8 +26,10 @@ const DesktopHeader = () => {
   return (
     <div className="desktopHeader">
       <ClickableLogo />
-      <nav className="desktopNavItems">{menuList}</nav>
-      <ThemeToggleButton />
+      <nav className="desktopNavItems">
+        {menuList}
+        <ThemeToggleButton />
+      </nav>
     </div>
   );
 };
