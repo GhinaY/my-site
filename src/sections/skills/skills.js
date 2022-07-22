@@ -18,7 +18,7 @@ import TypescriptIcon from 'react-devicon/typescript/original/TypescriptOriginal
 import RailsIcon from 'react-devicon/rails/plain/RailsPlain.svg';
 import CSSIcon from 'react-devicon/css3/plain/Css3Plain.svg';
 import DockerIcon from 'react-devicon/docker/plain/DockerPlain.svg';
-import Python from 'react-devicon/Python/plain/PythonPlain.svg';
+import Python from 'react-devicon/python/plain/PythonPlain.svg';
 import GraphQLIcon from '../../../assets/icons/GraphQL-logo.svg';
 import MLIcon from '../../../assets/icons/ml-icon.svg';
 import HaskellIcon from '../../../assets/icons/haskell-icon.svg';
