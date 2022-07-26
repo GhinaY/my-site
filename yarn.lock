@@ -4109,7 +4109,7 @@ ci-info@2.0.0, ci-info@^2.0.0:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"
   integrity sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==
 
-classnames@^2.2.1, classnames@^2.2.6:
+classnames@^2.2.6:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
   integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
@@ -8512,15 +8512,10 @@ lodash.has@^4.0:
   resolved "https://registry.yarnpkg.com/lodash.has/-/lodash.has-4.5.2.tgz#d19f4dc1095058cccbe2b0cdf4ee0fe4aa37c862"
   integrity sha512-rnYUdIo6xRCJnQmbVFEwcxF144erlD+M3YcJUVesflU9paQaE8p+fJDcIQrlMYbxoANFL+AB9hZrzSBBk5PL+g==
 
-lodash.isnumber@3.0.3, lodash.isnumber@^3.0.0:
+lodash.isnumber@^3.0.0:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz#3ce76810c5928d03352301ac287317f11c0b1ffc"
   integrity sha512-QYqzpfwO3/CWf3XP+Z+tkQsfaLL/EnUlXWVkIk5FUPc4sBdTehEqZONuyRt2P67PXAk+NXmTBcc97zw9t1FQrw==
-
-lodash.isstring@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/lodash.isstring/-/lodash.isstring-4.0.1.tgz#d527dfb5456eca7cc9bb95d5daeaf88ba54a5451"
-  integrity sha512-0wJxfxH1wgO3GrbuP+dTTk7op+6L41QCXbGINEmD+ny/G/eCqGzxyCsh7159S+mgDDcoarnBw6PC1PS5+wUGgw==
 
 lodash.kebabcase@^4.1.1:
   version "4.1.1"
@@ -9693,14 +9688,6 @@ nopt@^5.0.0:
   dependencies:
     abbrev "1"
 
-normalize-css-unit@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/normalize-css-unit/-/normalize-css-unit-1.0.1.tgz#fa8e8b8dff67cfbc4fd31aef3ee8686394245528"
-  integrity sha512-G12dbKuwyij4V0P+1Z5Ke+6is/Ltl6qE2mEYNT6PRyQzcp1VDeM2t7Ft7wOgeM9L1cErxKGg8gHMFd7nDBn+ew==
-  dependencies:
-    lodash.isnumber "3.0.3"
-    lodash.isstring "4.0.1"
-
 normalize-package-data@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/normalize-package-data/-/normalize-package-data-2.5.0.tgz#e66db1838b200c1dfc233225d12cb36520e234a8"
@@ -10715,7 +10702,7 @@ prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.0.0, prop-types@^15.3.0, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.7.2, prop-types@^15.8.1:
+prop-types@^15.0.0, prop-types@^15.5.7, prop-types@^15.6.1, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -10929,15 +10916,6 @@ react-dev-utils@^12.0.1:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-react-devicon@^0.1.9:
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/react-devicon/-/react-devicon-0.1.9.tgz#833344b52a6b07d547a25e1d99395f69b6ceec5f"
-  integrity sha512-lPVhGqNotSTEmAW15PgEvWr/5YSbQuDNO/hgAenFdFQUQH0abKZI4FwYywBI6ATDi+v7saNbWymB15txqznuGQ==
-  dependencies:
-    normalize-css-unit "^1.0.0"
-    prop-types "^15.3.0"
-    react-svg-inline "^2.0.0"
-
 react-dom@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
@@ -10970,11 +10948,6 @@ react-helmet@^6.1.0:
     prop-types "^15.7.2"
     react-fast-compare "^3.1.1"
     react-side-effect "^2.1.0"
-
-react-intersection-observer@^8.26.2:
-  version "8.34.0"
-  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.34.0.tgz#6f6e67831c52e6233f6b6cc7eb55814820137c42"
-  integrity sha512-TYKh52Zc0Uptp5/b4N91XydfSGKubEhgZRtcg1rhTKABXijc4Sdr1uTp5lJ8TN27jwUsdXxjHXtHa0kPj704sw==
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
@@ -11030,27 +11003,10 @@ react-side-effect@^2.1.0:
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.2.tgz#dc6345b9e8f9906dc2eeb68700b615e0b4fe752a"
   integrity sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==
 
-react-svg-inline@^2.0.0:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/react-svg-inline/-/react-svg-inline-2.1.1.tgz#532664006bf5b4f9ca2879d185e546df9a7476ef"
-  integrity sha512-mN7/qwq133dHMMQdtJRMtZ6tK1ynzOJMZBKR34blzv3HqQpNBsaOKXkEe1kN14hcJJhzrUbsB+uix2ZOpF4kQg==
-  dependencies:
-    classnames "^2.2.1"
-    prop-types "^15.5.8"
-
 react-typography@^0.16.19:
   version "0.16.20"
   resolved "https://registry.yarnpkg.com/react-typography/-/react-typography-0.16.20.tgz#6861fef52ab3156eda334cbe110fb66646340f57"
   integrity sha512-xRDlR5mYA/NI2WAc/DPvmODWK5UvY6LsjzPEeiT5X1yXUDpqFAFnWi/m5atrAtaIOeZqT982DQM+Cy8Io+jVFg==
-
-react-vertical-timeline-component@^3.0.2:
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/react-vertical-timeline-component/-/react-vertical-timeline-component-3.5.2.tgz#fd2c34e130176f5c1f10e2e3468c14a1d74a7453"
-  integrity sha512-Wcb85NUvmygLFF45bfxVGU4AyHOBjdQY9IqB8uLG1jXWvIthkQft1ZJOGirIlYHSYnDl9sOs8ItL1sNtqA7GUg==
-  dependencies:
-    classnames "^2.2.6"
-    prop-types "^15.7.2"
-    react-intersection-observer "^8.26.2"
 
 react-wordcloud@^1.2.3:
   version "1.2.7"

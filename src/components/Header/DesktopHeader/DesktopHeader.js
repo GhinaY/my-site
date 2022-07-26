@@ -7,6 +7,7 @@ import './DesktopHeader.scss';
 const menuItems = {
   About: -180,
   Skills: -50,
+  Journey: -50,
   Resume: -50,
   Contact: -50,
 };

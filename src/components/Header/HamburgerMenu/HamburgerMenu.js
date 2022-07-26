@@ -8,6 +8,7 @@ import './HamburgerMenu.scss';
 const menuItems = {
   About: -100,
   Skills: 50,
+  Journey: 50,
   Resume: 50,
   Contact: 50,
 };
