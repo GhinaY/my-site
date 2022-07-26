@@ -34,8 +34,8 @@ body {
   --textSecondary: #808080;
   --textTertiary: #a9a9a9;
   --uiPrimary: black;
-  --gradient1: rgb(55, 0, 108);
-  --gradient2: rgb(187, 116, 79);
+  --gradient1: #37006c;
+  --gradient2: #bb744f;
 
   background-color: var(--bg);
   color: var(--textPrimary);
@@ -81,8 +81,8 @@ body.dark {
   --textSecondary: #bdc1c6;
   --textTertiary: #969ba1;
   --uiPrimary: rgba(255, 255, 255, 0.88);
-  --gradient1: rgb(137, 112, 158);
-  --gradient2: rgb(191, 148, 125);
+  --gradient1: #89709e;
+  --gradient2: #bf947d;
 
   .darkModeOnly {
     display: block;
@@ -108,8 +108,9 @@ body.dark {
 }
 
 .gradientText {
-  -webkit-background-clip: text; // to make the animated colors ofthe text, not the bg
-  -webkit-text-fill-color: transparent; // same ^
+  background-clip: text;  // to make the animated colors ofthe text
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
 }
 
 .gradientColors {

@@ -3,8 +3,9 @@
   font-family: 'Sacramento', monospace;
   font-size: 4.8rem;
   font-weight: normal;
-  -webkit-background-clip: text; // to make the animated colors ofthe text, not the bg
-  -webkit-text-fill-color: transparent; // same ^
+  background-clip: text; // to make the animated colors ofthe text
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
 
   @media only screen and (max-width: 48em) {
     font-size: 3.2rem;

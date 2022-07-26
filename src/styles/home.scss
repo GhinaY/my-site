@@ -23,6 +23,7 @@
     var(--gradient1) 0%,
     var(--gradient2) 100%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: Caveat, cursive;
