@@ -9,6 +9,11 @@
   position: absolute;
   top: 3rem;
   bottom: 3rem;
+  background: linear-gradient(
+    to bottom,
+    var(--gradient1) 0%,
+    var(--gradient2)
+  );
 
   &:before {
     content: "";
