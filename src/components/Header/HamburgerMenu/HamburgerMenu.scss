@@ -22,7 +22,7 @@
   list-style-type: none;
   border-width: 0;
   border-left: 4px solid;
-  border-image: linear-gradient(#37006c, #b04056) 0 100%;
+  border-image: linear-gradient(var(--gradient1), var(--gradient2)) 0 100%;
 
   transform-origin: 0% 0%;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
