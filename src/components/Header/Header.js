@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 import classNames from 'classnames';
 import DesktopHeader from './DesktopHeader/DesktopHeader';
 import MobileHeader from './MobileHeader/MobileHeader';
@@ -28,10 +29,13 @@ export const MenuItem = ({ subClassName, itemName, offset = 0 }) => (
 );
 
 const Header = () => {
+  const breakpoints = useBreakpoint();
+  const isMobileView = breakpoints.sm;
+  
   return (
     <>
-      <DesktopHeader />
-      <MobileHeader />
+      {!isMobileView && <DesktopHeader />}
+      {isMobileView && <MobileHeader />}
     </>
   );
 };

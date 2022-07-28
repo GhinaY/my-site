@@ -6,7 +6,7 @@
   padding: 3rem;
   background-color: var(--bgOverlay);
 
-  @media only screen and (max-width: 48em) {
+  @media only screen and (max-width: 45em) {
     margin-top: 0rem;
   }
 }
@@ -15,7 +15,7 @@
   margin-left: 5rem;
   max-width: 35.5rem;
 
-  @media only screen and (max-width: 48em) {
+  @media only screen and (max-width: 45em) {
     margin-left: 0;
   }
 }

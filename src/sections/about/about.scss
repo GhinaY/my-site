@@ -8,7 +8,7 @@
   align-items: center;
   padding: 3rem 0rem;
 
-  @media only screen and (max-width: 48em) {
+  @media only screen and (max-width: 45em) {
     flex-direction: column;
   }
 }
@@ -29,7 +29,7 @@
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
 
-  @media only screen and (max-width: 48em) {
+  @media only screen and (max-width: 45em) {
     width: 20rem;
     height: 24rem;
     margin-bottom: 5rem;
@@ -44,7 +44,7 @@
   margin-left: 10rem;
   justify-content: center;
 
-  @media only screen and (max-width: 48em) {
+  @media only screen and (max-width: 45em) {
     width: 100%;
     margin-left: 0rem;
     text-align: center;

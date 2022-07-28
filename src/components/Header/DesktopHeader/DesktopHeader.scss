@@ -13,10 +13,6 @@
   box-sizing: border-box;
   overflow: hidden;
   background: var(--bg);
-
-  @media only screen and (max-width: 48em) {
-    display: none;
-  }
 }
 
 .desktopNavItems {
