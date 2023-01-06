@@ -5,8 +5,8 @@ import Section from '../components/Section/Section';
 import welcomeBlock from '../sections/welcome/welcome';
 import aboutSection from '../sections/about/about';
 import skillsSection from '../sections/skills/skills';
-import resumeSection from '../sections/resume/resume';
-import contactSection from '../sections/contact/contact';
+import ResumeSection from '../sections/resume/resume';
+import ContactSection from '../sections/contact/contact';
 import '../styles/home.scss';
 
 if (typeof window !== 'undefined') {
@@ -49,8 +49,8 @@ const Home = () => (
       {welcomeBlock}
       <Section id="About" content={aboutSection} />
       <Section id="Skills" content={skillsSection} />
-      <Section id="Resume" content={resumeSection} />
-      <Section id="Contact" content={contactSection} />
+      <Section id="Resume" content={<ResumeSection />} />
+      <Section id="Contact" content={<ContactSection />} />
       {quote}
     </Layout>
   </>
