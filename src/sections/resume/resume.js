@@ -23,7 +23,7 @@ const Resume = () => {
         </div>
         <p>
           I'm always on the lookout for new and exciting opportunities, right here
-          in Melbourne or wherever else in the world.
+          in London or wherever else in the world.
           <br />
           <br />
           If you'd like to find out more about my experience and capabilities,

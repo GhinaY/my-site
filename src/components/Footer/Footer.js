@@ -10,7 +10,7 @@ const Footer = () => {
         <span role="img" aria-label="love">
           🤍
         </span>{' '}
-        & React in Melbourne
+        & React in London
       </pre>
     </div>
   );
